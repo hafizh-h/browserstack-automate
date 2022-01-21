@@ -24,14 +24,18 @@ desired_caps = {
     "build": "Launch Time Comparison",
     "name": "launch_time_4.27.0",
     "platformName": "android",
-    "platformVersion": "10.0",
-    "device": "Samsung Galaxy A51",
+    "platformVersion": "11.0",
+    "deviceName": "Samsung Galaxy S21",
     "app": "bs://4ec189ab1ed759ed931c06496c848d44bf0264f4"
 }
 
 driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
-
+driver.implicitly_wait(20)
 # test = sp.run(["adb logcat -d | grep 'Displayed com.tiket.gits' | sed '1q;d'| awk '{print $5, $7}'"], text=True, shell=True)
 # print(test)
+
+# displayed = sp.run(["adb logcat -d | grep 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' | sed '1q;d' | awk '{"
+#                     "print $7, $9}'"], text=True, shell=True)
+# print(displayed)
 
 driver.quit()
