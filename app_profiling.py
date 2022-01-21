@@ -3,6 +3,7 @@ from requests.auth import HTTPBasicAuth
 '''
 TO-DO:
 * Search for a way to automatically get buildID and sessionID for deviceLogs and appprofiling
+    - sessionID = driver.session_id (works and tested in launch_time.py)
 * URL for Device Logs: https://api.browserstack.com/app-automate/builds/{buildID}/sessions/{sessionID}/devicelogs
 * URL for App Profiling: https://api.browserstack.com/app-automate/builds/{buildID}/sessions/{sessionID}/appprofiling
 '''

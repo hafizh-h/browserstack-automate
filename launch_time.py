@@ -1,6 +1,8 @@
 from appium import webdriver
 import subprocess as sp
-
+import requests
+from requests.auth import HTTPBasicAuth
+import time
 '''
 Launch Time Comparison for v4.27.0 and v4.28.0
 App for v4.27.0 = v4.27.0-1-RC29-HEAD-131201-release.apk
@@ -30,7 +32,8 @@ desired_caps = {
 }
 
 driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
-driver.implicitly_wait(20)
+session_id = driver.session_id
+
 # test = sp.run(["adb logcat -d | grep 'Displayed com.tiket.gits' | sed '1q;d'| awk '{print $5, $7}'"], text=True, shell=True)
 # print(test)
 
@@ -39,3 +42,8 @@ driver.implicitly_wait(20)
 # print(displayed)
 
 driver.quit()
+
+basic = HTTPBasicAuth('hafizh_783gSd', 'cpKChBFWNYG4qaA4dj1H')
+time.sleep(30) #requests had to wait ~30s because BrowserStack took some time to generate the App Profilng Data
+r = requests.get('https://api.browserstack.com/app-automate/builds/0cf20a8dfbaa3208b41a29b0b9c03482664ccf02/sessions/' + str(session_id) + '/appprofiling', auth=basic)
+print(r.json())
