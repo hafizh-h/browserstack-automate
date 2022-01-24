@@ -44,8 +44,8 @@ session_id = driver.session_id
 
 driver.quit()
 
-basic = HTTPBasicAuth('hafizh_783gSd', 'cpKChBFWNYG4qaA4dj1H')
-time.sleep(30) #requests had to wait ~30s because BrowserStack took some time to generate the App Profilng Data
+basic = HTTPBasicAuth(userName, accessKey)
+time.sleep(35) #requests had to wait ~30s because BrowserStack took some time to generate the App Profilng Data
 app_profiling = requests.get('https://api.browserstack.com/app-automate/builds/0cf20a8dfbaa3208b41a29b0b9c03482664ccf02/sessions/' + str(session_id) + '/appprofiling', auth=basic)
 app_start = requests.get('https://api.browserstack.com/app-automate/builds/0cf20a8dfbaa3208b41a29b0b9c03482664ccf02/sessions/' + str(session_id) + '/devicelogs', auth=basic)
 
