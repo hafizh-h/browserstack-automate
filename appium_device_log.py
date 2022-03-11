@@ -63,7 +63,14 @@ logs = driver.get_log('logcat')
 log_messages = list(map(lambda log: log['message'], logs))
 driver.quit()
 
-log_file = open("device_log.txt", "w");
+log_file = open("device_log.txt", "w")
 for i in log_messages:
     log_file.write(i + "\n")
 log_file.close()
+
+perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
+
+perf_file = open("perf_log.txt", "w")
+for j in perf_metrics:
+    perf_file.write(j + "\n")
+perf_file.close()
