@@ -15,8 +15,8 @@ App for v4.30.0 = v4.30.0-release-4.30.0-150206-release.apk
 App url: bs://e1cf27a39a6a15c3bec8fed938dcb71e707ea941
 App for v4.31.2 Release = v4.31.2-RC111-HEAD-020312-release.apk
 App url: bs://43d9df000cc921878557fe78d79480c0ea98c4a7
-App for v4.32.0 Release = v4.32.0-RC122-HEAD-140306-release.apk
-App url: bs://a5f54c4537997bd7ee0019299a117926db184edf
+App for v4.32.0 Release = v4.32.0-RC119-HEAD-090310-release.apk
+App url: bs://743efc2e4e1a72a41bfd1eb69b50b59321063aba
 '''
 userName = "hafizh_783gSd"
 accessKey = "cpKChBFWNYG4qaA4dj1H"
@@ -28,7 +28,7 @@ desired_caps = {
     "platformName": "android",
     "platformVersion": "11.0",
     "deviceName": "Samsung Galaxy S21",
-    "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
+    "app": "bs://a5f54c4537997bd7ee0019299a117926db184edf"
 }
 
 driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
@@ -59,7 +59,7 @@ driver.quit()
 
 perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
 
-perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " cold_perf_logs(4.31.2).txt", "w")
+perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " cold_perf_logs(4.32.0).txt", "w")
 for j in perf_metrics:
     perf_file.write(j + "\n")
 perf_file.close()
