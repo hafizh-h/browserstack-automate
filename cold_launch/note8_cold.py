@@ -1,5 +1,3 @@
-import time
-
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
@@ -26,10 +24,10 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 desired_caps = {
     "project": "Core Platform",
     "build": "Launch Time 4.31.2 Release",
-    "name": "Samsung Galaxy S21 Cold 1",
+    "name": "Xiaomi Redmi Note Cold",
     "platformName": "android",
-    "platformVersion": "11.0",
-    "deviceName": "Samsung Galaxy S21",
+    "platformVersion": "9.0",
+    "deviceName": "Xiaomi Redmi Note 8",
     "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
 
@@ -54,39 +52,14 @@ btn_login_menu_element = wait.until(
 )
 btn_login_menu_element.click()
 
-driver.close_app()
-time.sleep(5)
-driver.launch_app()
-
-btn_cancel_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
-)
-btn_cancel_element.click()
-
-btn_close_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-)
-btn_close_element.click()
-
-btn_login_menu_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
-                                                "@text='Masuk')]"))
-)
-btn_login_menu_element.click()
-
 logs = driver.get_log('logcat')
 log_messages = list(map(lambda log: log['message'], logs))
 
 driver.quit()
 
-log_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " logs.txt", "w")
-for i in log_messages:
-    log_file.write(i + "\n")
-log_file.close()
-
 perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
 
-perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " perf_logs.txt", "w")
+perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " cold_perf_logs(4.31.2).txt", "w")
 for j in perf_metrics:
     perf_file.write(j + "\n")
 perf_file.close()
