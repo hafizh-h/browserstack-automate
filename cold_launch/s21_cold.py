@@ -23,12 +23,12 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.31.2 Release",
+    "build": "Launch Time 4.32.0 Release",
     "name": "Samsung Galaxy S21 Cold",
     "platformName": "android",
     "platformVersion": "11.0",
     "deviceName": "Samsung Galaxy S21",
-    "app": "bs://a5f54c4537997bd7ee0019299a117926db184edf"
+    "app": "bs://743efc2e4e1a72a41bfd1eb69b50b59321063aba"
 }
 
 driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)

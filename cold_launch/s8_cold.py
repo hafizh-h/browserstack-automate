@@ -57,7 +57,7 @@ log_messages = list(map(lambda log: log['message'], logs))
 
 driver.quit()
 
-perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
+perf_metrics = list(filter(lambda perf: 'I ActivityManager' in perf, log_messages))
 
 perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " cold_perf_logs(4.31.2).txt", "w")
 for j in perf_metrics:

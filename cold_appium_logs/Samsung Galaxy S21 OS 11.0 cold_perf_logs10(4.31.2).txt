@@ -1,0 +1,4 @@
+03-15 02:56:57.461  1274  9247 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tiket.gits/.v2splash.SplashV2Activity} from uid 2000
+03-15 02:56:58.078  1274  1416 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +547ms
+03-15 02:56:59.408  1274  1416 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +1s947ms
+03-15 02:57:06.250  1274  1361 I ActivityTaskManager: START u0 {flg=0x400000 cmp=com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity (has extras)} from uid 10356
