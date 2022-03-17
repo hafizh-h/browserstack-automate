@@ -1,0 +1,69 @@
+03-15 13:18:53.221  3409  4035 I ActivityManager: Start proc 16372:io.appium.settings/u0a218 for activity io.appium.settings/.Settings
+03-15 13:18:53.601  3409  3517 I ActivityManager: Displayed io.appium.settings/.Settings: +402ms
+03-15 13:18:54.731  3409  3517 I ActivityManager: Displayed com.sec.android.app.launcher/.activities.LauncherActivity: +203ms
+03-15 13:18:54.791  3409  4008 I ActivityManager: Force stopping com.tiket.gits appid=10222 user=0: from pid 16582
+03-15 13:18:55.451  3409  4327 I ActivityManager: Force stopping com.tiket.gits appid=10222 user=0: clear data
+03-15 13:18:55.461  3409  4327 I ActivityManager: Force stopping com.tiket.gits appid=10222 user=0: clear data
+03-15 13:18:55.931  3409  4310 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10220 user=0: from pid 16839
+03-15 13:18:56.661  3409  3492 I ActivityManager: Killing 14946:com.samsung.android.providers.context/u0a7 (adj -12): bg anr
+03-15 13:18:56.741  3409  4301 I ActivityManager: Process com.samsung.android.providers.context (pid 14946)(adj -12) has died(116,2013)
+03-15 13:18:56.771  3409  4301 I ActivityManager: Start proc 17030:com.samsung.android.providers.context/u0a7 for restart com.samsung.android.providers.context
+03-15 13:18:56.781  3409  3441 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10219 user=0: start instr
+03-15 13:18:56.821  3409  3441 I ActivityManager: Start proc 17047:io.appium.uiautomator2.server/u0a219 for added application io.appium.uiautomator2.server
+03-15 13:18:56.951  3409  3492 I ActivityManager: Waited long enough for: ServiceRecord{e889d94 u0 com.google.android.gms/.statementservice.OperationService}
+03-15 13:18:57.031  3409  3987 I ActivityManager: Start proc 17114:com.samsung.cmh:CMH/5004 for broadcast-3 com.samsung.cmh/.core.ClearDataReceiver
+03-15 13:18:57.201  3409  5708 I ActivityManager: Start proc 17176:com.samsung.android.communicationservice/5002 for broadcast-3 com.samsung.android.communicationservice/.preference.SettingChangeReceiver
+03-15 13:18:57.201  3409  5708 I ActivityManager: Killing 5517:com.google.android.apps.photos/u0a122 (adj 15): DHA:empty #33
+03-15 13:18:57.291  3409  4327 I ActivityManager: Start proc 17217:com.samsung.enhanceservice/5004 for service com.samsung.enhanceservice/.EnhanceService
+03-15 13:18:57.311  3409  4447 I ActivityManager: Start proc 17235:com.samsung.dcmservice/5004 for service com.samsung.dcmservice/.DCMService
+03-15 13:18:57.341  3409  4448 I ActivityManager: Start proc 17254:com.samsung.android.coreapps/5011 for content provider com.samsung.android.coreapps/.easysignup.db.EasySignUpProviderPublic
+03-15 13:18:57.381  3409  4035 I ActivityManager: Killing 6902:com.samsung.android.app.assistantmenu/1000 (adj 15): DHA:empty #33
+03-15 13:18:57.391  3409  6807 I ActivityManager: Killing 13056:com.sec.android.provider.badge/u0a3 (adj 15): DHA:empty #33
+03-15 13:18:57.671  3409  4446 I ActivityManager: Killing 15187:com.google.process.gapps/u0a18 (adj 15): DHA:empty #33
+03-15 13:18:57.671  3409  4446 I ActivityManager: Killing 9250:com.samsung.android.securitylogagent/1000 (adj 15): DHA:empty #33
+03-15 13:18:57.801  3409  4448 I ActivityManager: Start proc 17354:com.samsung.storyservice/5004 for broadcast-3 com.samsung.storyservice/.framework.StaticBroadcastReceiver
+03-15 13:18:57.901  3409  4448 I ActivityManager: Start proc 17384:com.android.documentsui/u0a89 for broadcast-3 com.android.documentsui/.PackageReceiver
+03-15 13:18:57.901  3409  4448 I ActivityManager: Killing 6454:com.samsung.android.app.galaxylabs/u0a14 (adj 15): DHA:empty #33
+03-15 13:18:58.021  3409  4311 I ActivityManager: Start proc 17419:com.android.calendar/u0a130 for broadcast-3 com.android.calendar/.common.receiver.WeatherActionReceiver
+03-15 13:18:58.021  3409  4311 I ActivityManager: Killing 7819:com.google.android.partnersetup/u0a22 (adj 15): DHA:empty #33
+03-15 13:18:58.061  3409  4006 I ActivityManager: Start proc 17438:com.android.externalstorage/u0a11 for content provider com.android.externalstorage/.ExternalStorageProvider
+03-15 13:18:58.091  3409  5708 I ActivityManager: Killing 7910:com.samsung.SMT/1000 (adj 15): DHA:empty #33
+03-15 13:18:58.211  3409  4008 I ActivityManager: Start proc 17470:com.samsung.android.weather/u0a151 for broadcast-3 com.samsung.android.weather/.libs.data.service.AWClearDataService
+03-15 13:18:58.211  3409  4008 I ActivityManager: Killing 7836:com.samsung.voiceserviceplatform/u0a39 (adj 15): DHA:empty #33
+03-15 13:18:58.271  3409  4310 I ActivityManager: Start proc 17487:com.google.android.apps.docs/u0a90 for content provider com.google.android.apps.docs/.storagebackend.StorageBackendContentProvider
+03-15 13:18:58.311  3409  6807 I ActivityManager: Killing 6467:com.android.settings/1000 (adj 15): DHA:empty #33
+03-15 13:18:58.411  3409  3441 I ActivityManager: Start proc 17528:com.android.chrome/u0a83 for broadcast-3 com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+03-15 13:18:58.431  3409  4006 I ActivityManager: Killing 6823:com.samsung.android.sm.provider/1000 (adj 15): DHA:empty #33
+03-15 13:18:58.671  3409  4006 I ActivityManager: Start proc 17623:com.google.android.apps.photos/u0a122 for broadcast-3 com.google.android.apps.photos/com.google.android.libraries.social.mediastoresync.reset.impl.MediaStoreClearedReceiver
+03-15 13:18:58.681  3409  4006 I ActivityManager: Killing 6490:com.samsung.android.sm.devicesecurity/5012 (adj 15): DHA:empty #33
+03-15 13:18:58.961  3409  4446 I ActivityManager: Killing 6847:com.samsung.android.themecenter/1000 (adj 15): DHA:empty #33
+03-15 13:18:59.251  3409  4035 I ActivityManager: Start proc 17771:com.google.process.gapps/u0a18 for content provider com.google.android.gsf/.gservices.GservicesProvider
+03-15 13:18:59.341  3409  4327 I ActivityManager: Killing 7957:com.samsung.android.bbc.bbcagent/1000 (adj 15): DHA:empty #33
+03-15 13:18:59.871  3409  3441 I ActivityManager: Force stopping com.tiket.gits appid=10222 user=0: from pid 17794
+03-15 13:18:59.981  3409  3492 I ActivityManager: Start proc 17990:com.wssyncmldm/1000 for broadcast-5 com.wssyncmldm/com.samsung.android.app.fotaclient.NetworkReceiver
+03-15 13:19:00.221  3409  3442 I ActivityManager: Start proc 18048:com.tiket.gits/u0a222 for activity com.tiket.gits/.v2splash.SplashV2Activity
+03-15 13:19:00.331  3409  6809 I ActivityManager: Start proc 18072:com.samsung.ipservice/5004 for service com.samsung.ipservice/.IPService
+03-15 13:19:00.351  3409  5708 I ActivityManager: Start proc 18085:com.samsung.faceservice/5004 for service com.samsung.faceservice/.FaceService
+03-15 13:19:00.361  3409  4006 I ActivityManager: Killing 6520:com.samsung.android.app.filterinstaller/1000 (adj 15): DHA:empty #33
+03-15 13:19:00.761  3409  4301 I ActivityManager: Killing 7971:com.samsung.android.app.mirrorlink/1000 (adj 15): DHA:empty #33
+03-15 13:19:00.771  3409  4301 I ActivityManager: Killing 6535:com.sec.android.widgetapp.samsungapps/u0a99 (adj 15): DHA:empty #33
+03-15 13:19:01.521  3409  3517 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s318ms
+03-15 13:19:03.771  3409  3987 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +3s565ms
+03-15 13:19:05.841  3409  4008 I ActivityManager: Start proc 19155:com.google.android.webview:webview_service/u0a154 for service com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer
+03-15 13:19:06.631  3409  3441 I ActivityManager: Killing 6630:com.sec.android.app.samsungapps/u0a13 (adj 15): DHA:empty #33
+03-15 13:19:09.111  3409  4447 I ActivityManager: Start proc 19653:com.samsung.android.app.FileShareServer/5005 for broadcast-3 com.samsung.android.app.FileShareServer/.ServerBroadcastReceiver
+03-15 13:19:09.491  3409  4448 I ActivityManager: Start proc 19734:com.samsung.android.app.watchmanagerstub/u0a101 for broadcast-3 com.samsung.android.app.watchmanagerstub/com.sec.android.applicationmgr.PackageIntentReceiver
+03-15 13:19:09.501  3409  4448 I ActivityManager: Killing 3447:com.enhance.gameservice/u0a100 (adj 15): DHA:empty #33
+03-15 13:19:10.011  3409  4310 I ActivityManager: Killing 6976:com.sec.android.app.shealth/u0a35 (adj 15): DHA:empty #33
+03-15 13:19:10.221  3409  4008 I ActivityManager: Start proc 19839:com.enhance.gameservice/u0a100 for broadcast-3 com.enhance.gameservice/.GameServiceReceiver
+03-15 13:19:10.461  3409  4301 I ActivityManager: Killing 8059:com.samsung.android.SettingsReceiver/1000 (adj 15): DHA:empty #33
+03-15 13:19:10.811  3409  4008 I ActivityManager: Start proc 19931:com.sec.android.app.shealth/u0a35 for broadcast-3 com.sec.android.app.shealth/com.samsung.android.app.shealth.serviceframework.partner.PluginBroadcastReceiver
+03-15 13:19:11.491  3409  3442 I ActivityManager: Killing 15529:com.sec.android.soagent/1000 (adj 15): DHA:empty #33
+03-15 13:19:13.711  3409  3492 I ActivityManager: Start proc 20409:com.samsung.android.SettingsReceiver/1000 for broadcast-5 com.samsung.android.SettingsReceiver/.SettingsIntentReceiver
+03-15 13:19:13.871  3409  4310 I ActivityManager: Start proc 20468:com.samsung.android.themestore/u0a63 for broadcast-5 com.samsung.android.themestore/.manager.autoSelfUpgradeService.AutoSelfUpgradeReceiver
+03-15 13:19:13.871  3409  4310 I ActivityManager: Killing 15563:com.samsung.aasaservice/1000 (adj 15): DHA:empty #33
+03-15 13:19:14.111  3409  3441 I ActivityManager: Killing 15542:com.policydm/1000 (adj 15): DHA:empty #33
+03-15 13:19:16.731  3409  3441 I ActivityManager: Start proc 20898:com.sec.enterprise.knox.cloudmdm.smdms/u0a146 for broadcast-5 com.sec.enterprise.knox.cloudmdm.smdms/.core.BulkEnrollmentInitiator
+03-15 13:19:16.881  3409  4448 I ActivityManager: Killing 15586:com.osp.app.signin/u0a40 (adj 15): DHA:empty #33
+03-15 13:19:16.961  3409  4035 I ActivityManager: Start proc 20926:com.sec.android.app.samsungapps/u0a13 for broadcast-5 com.sec.android.app.samsungapps/.networkstatereceiver.NetworkStateReceiver
+03-15 13:19:17.381  3409  4448 I ActivityManager: Killing 14760:com.android.defcontainer/u0a8 (adj 15): DHA:empty #33
