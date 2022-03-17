@@ -32,3 +32,4 @@
 03-15 14:26:00.586  1717  5586 I ActivityManager: Killing 26360:com.android.settings:remote/1000 (adj 906): empty #17
 03-15 14:26:05.511  1717  4861 I ActivityManager: Killing 27631:android.process.acore/u0a33 (adj 906): empty #17
 03-15 14:26:08.419  1717  1935 I ActivityManager: Killing 27871:com.miui.cloudservice/u0a115 (adj 906): empty #17
+

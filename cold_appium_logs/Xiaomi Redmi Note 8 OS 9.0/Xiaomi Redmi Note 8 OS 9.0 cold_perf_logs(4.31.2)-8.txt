@@ -30,3 +30,4 @@
 03-15 14:46:35.157  1730  1925 I ActivityManager: Start proc 2605:com.android.chrome:sandboxed_process0/u0i106 for webview_service com.tiket.gits/org.chromium.content.app.SandboxedProcessService0 caller=com.tiket.gits
 03-15 14:46:38.158  1730  5337 I ActivityManager: Killing 30531:com.miui.msa.global:ui/u0a145 (adj 906): empty #17
 03-15 14:46:48.401  1730  5337 I ActivityManager: Killing 31756:android.process.acore/u0a33 (adj 906): empty #17
+

@@ -40,3 +40,4 @@
 03-15 14:53:10.807  1682  1924 I ActivityManager: Start proc 14224:com.android.chrome:sandboxed_process0/u0i54 for webview_service com.tiket.gits/org.chromium.content.app.SandboxedProcessService0 caller=com.tiket.gits
 03-15 14:53:22.782  1682  5648 I ActivityManager: START u0 {flg=0x400000 cmp=com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity (has extras)} from uid 10244
 03-15 14:53:22.863  1682  9581 I ActivityManager: The Process com.tiket.gits Already Exists in BG. So sending its PID: 13454
+

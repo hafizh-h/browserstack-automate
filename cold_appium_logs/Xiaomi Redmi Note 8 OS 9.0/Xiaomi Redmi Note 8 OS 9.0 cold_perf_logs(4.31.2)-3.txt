@@ -29,3 +29,4 @@
 03-15 14:11:44.250  1728  3961 I ActivityManager: Killing 29907:android.process.acore/u0a33 (adj 906): empty #17
 03-15 14:11:53.487  1728  5555 I ActivityManager: START u0 {flg=0x400000 cmp=com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity (has extras)} from uid 10260
 03-15 14:11:53.522  1728  5555 I ActivityManager: The Process com.tiket.gits Already Exists in BG. So sending its PID: 31713
+

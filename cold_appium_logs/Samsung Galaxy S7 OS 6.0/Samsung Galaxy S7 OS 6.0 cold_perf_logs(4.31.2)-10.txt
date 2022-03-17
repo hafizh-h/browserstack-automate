@@ -51,3 +51,4 @@
 03-15 13:27:29.791  3409  4310 I ActivityManager: Start proc 7243:com.samsung.android.sm/1000 for broadcast-3 com.samsung.android.sm/.common.SmartManagerReceiver
 03-15 13:27:29.811  3409  4447 I ActivityManager: Killing 2029:com.samsung.android.app.mirrorlink/1000 (adj 15): DHA:empty #33
 03-15 13:27:30.031  3409  6809 I ActivityManager: Killing 30267:com.enhance.gameservice/u0a100 (adj 15): DHA:empty #33
+
