@@ -2,18 +2,12 @@ from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import subprocess as sp
 import requests
 from requests.auth import HTTPBasicAuth
 import time
 import json
-'''
-Launch Time Comparison for v4.27.0 and v4.28.0
-App for v4.27.0 = v4.27.0-1-RC29-HEAD-131201-release.apk
-App url: bs://4ec189ab1ed759ed931c06496c848d44bf0264f4
-App for v4.28.0 = v4.28.0-glideViewLoadIssue-release.apk
-App url: bs://06bb5df3b27055c41e954e2e0a469c35b3f54017
 
+'''
 Current Issues:
 - Can't get 'Displayed' and 'Fully drawn' from raw device logs
 - The metrics can't also be found in others Android build created
@@ -22,6 +16,7 @@ TO-DO:
 - Check on how to get the metrics from the device logs in App Automate
 - Explore more about python subprocess.run methods
 '''
+
 userName = "hafizh_783gSd"
 accessKey = "cpKChBFWNYG4qaA4dj1H"
 
