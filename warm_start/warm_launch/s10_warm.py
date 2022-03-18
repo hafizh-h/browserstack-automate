@@ -12,10 +12,10 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 desired_caps = {
     "project": "Core Platform",
     "build": "Launch Time 4.31.2 Release",
-    "name": "Xiaomi Redmi Note 8 Warm",
+    "name": "Samsung Galaxy S10 Warm",
     "platformName": "android",
     "platformVersion": "9.0",
-    "deviceName": "Xiaomi Redmi Note 8",
+    "deviceName": "Samsung Galaxy S10",
     "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
 

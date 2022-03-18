@@ -11,16 +11,16 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 desired_caps = {
     "project": "Core Platform",
     "build": "Launch Time 4.31.2 Release",
-    "name": "Xiaomi Redmi Note Cold",
+    "name": "Samsung Galaxy S10 Warm",
     "platformName": "android",
     "platformVersion": "9.0",
-    "deviceName": "Xiaomi Redmi Note 8",
+    "deviceName": "Samsung Galaxy S10",
     "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
 
 des_caps_data = yaml.safe_dump(desired_caps, allow_unicode=True, default_flow_style=False, sort_keys=False)
 
-iteration = 10
+iteration = 3
 
 for i in range(iteration):
     driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
