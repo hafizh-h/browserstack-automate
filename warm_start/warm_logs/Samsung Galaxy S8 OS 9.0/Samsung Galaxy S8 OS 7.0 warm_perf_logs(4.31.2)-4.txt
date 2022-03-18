@@ -1,0 +1,81 @@
+03-17 12:39:19.687  3783  3819 I ActivityManager: Start proc 26106:com.google.android.googlequicksearchbox:search/u0a89 for service com.google.android.googlequicksearchbox/com.google.android.apps.gsa.shared.util.keepalive.StandaloneKeepAlive$KeepAliveService
+03-17 12:39:19.729  3783 17422 I ActivityManager: DSS on for com.google.android.googlequicksearchbox and scale is 1.0
+03-17 12:39:22.099  3783 21991 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10000000 cmp=ComponentInfo{io.appium.settings/io.appium.settings.Settings}} from uid 2000 on display 0
+03-17 12:39:22.137  3783 24675 I ActivityManager: Start proc 26503:io.appium.settings/u0a196 for activity io.appium.settings/.Settings
+03-17 12:39:22.162  3783  7345 I ActivityManager: DSS on for io.appium.settings and scale is 1.0
+03-17 12:39:22.502  3783  3833 I ActivityManager: Displayed io.appium.settings/.Settings: +380ms (total +3m4s741ms)
+03-17 12:39:22.923  3783 10017 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: from pid 26584
+03-17 12:39:23.481  3783  8763 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: clear data
+03-17 12:39:23.485  3783  3819 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=-1: clearApplicationUserData
+03-17 12:39:23.609  3783  7332 I ActivityManager: Start proc 26809:com.android.chrome/u0a145 for broadcast com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+03-17 12:39:23.662  3783 10150 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+03-17 12:39:23.977  3783 28334 I ActivityManager: Start proc 26890:com.samsung.android.calendar/u0a152 for broadcast com.samsung.android.calendar/com.android.calendar.common.receiver.WeatherActionReceiver
+03-17 12:39:24.090  3783 21991 I ActivityManager: DSS on for com.samsung.android.calendar and scale is 1.0
+03-17 12:39:24.226  3783  8267 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10198 user=0: from pid 26820
+03-17 12:39:24.371  3783  3809 I ActivityManager: Start proc 26970:com.samsung.android.communicationservice/5002 for broadcast com.samsung.android.communicationservice/.preference.SettingChangeReceiver
+03-17 12:39:24.386  3783  3809 I ActivityManager: KPU : put [com.android.printspooler] : 5610 K
+03-17 12:39:24.386  3783  3809 I ActivityManager: Killing 21644:com.android.printspooler/u0a143 (adj 906): DHA:empty #33
+03-17 12:39:24.386  3783  3809 I ActivityManager: KPU : put [com.samsung.android.app.sbrowseredge] : 6506 K
+03-17 12:39:24.387  3783  3809 I ActivityManager: Killing 21807:com.samsung.android.app.sbrowseredge/u0a144 (adj 906): DHA:empty #33
+03-17 12:39:24.489  3783  8115 I ActivityManager: DSS on for com.samsung.android.communicationservice and scale is 1.0
+03-17 12:39:24.691  3783  8220 I ActivityManager: Start proc 27013:com.samsung.android.coreapps/5011 for content provider com.samsung.android.coreapps/.easysignup.db.EasySignUpProviderPublic
+03-17 12:39:24.752  3783 10150 I ActivityManager: DSS on for com.samsung.android.coreapps and scale is 1.0
+03-17 12:39:24.822  3783  3809 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10197 user=0: start instr
+03-17 12:39:24.864  3783  3809 I ActivityManager: Start proc 27052:io.appium.uiautomator2.server/u0a197 for added application io.appium.uiautomator2.server
+03-17 12:39:24.937  3783  8326 I ActivityManager: DSS on for io.appium.uiautomator2.server and scale is 1.0
+03-17 12:39:25.275  3783  8237 I ActivityManager: KPU : put [com.facebook.katana:optsvc] : 18606 K
+03-17 12:39:25.276  3783  8237 I ActivityManager: Killing 21724:com.facebook.katana:optsvc/u0a112 (adj 906): DHA:empty #33
+03-17 12:39:25.295  3783  8260 I ActivityManager: KPU : put [com.sec.android.provider.badge] : 5036 K
+03-17 12:39:25.295  3783  8260 I ActivityManager: Killing 19977:com.sec.android.provider.badge/u0a4 (adj 906): DHA:empty #33
+03-17 12:39:25.400  3783 10017 I ActivityManager: Start proc 27110:com.samsung.android.weather/u0a173 for broadcast com.samsung.android.weather/.app.common.receiver.WeatherAppReceiver
+03-17 12:39:25.557  3783  8237 I ActivityManager: DSS on for com.samsung.android.weather and scale is 1.0
+03-17 12:39:26.029  3783 25215 I ActivityManager: Start proc 27195:com.samsung.cmh:CMH/5004 for broadcast com.samsung.cmh/.core.ClearDataReceiver
+03-17 12:39:26.035  3783  8250 I ActivityManager: KPU : put [org.mozilla.firefox:tab30] : 28691 K
+03-17 12:39:26.035  3783  8250 I ActivityManager: Killing 25170:org.mozilla.firefox:tab30/u0a189 (adj 906): DHA:empty #33
+03-17 12:39:26.085  3783  4251 I ActivityManager: DSS on for com.samsung.cmh and scale is 1.0
+03-17 12:39:26.291  3783 10150 I ActivityManager: Start proc 27232:com.samsung.storyservice/5004 for broadcast com.samsung.storyservice/.framework.StaticBroadcastReceiver
+03-17 12:39:26.297  3783 10150 I ActivityManager: KPU : put [org.mozilla.firefox] : 125964 K
+03-17 12:39:26.298  3783 10150 I ActivityManager: Killing 25098:org.mozilla.firefox/u0a189 (adj 906): DHA:empty #33
+03-17 12:39:26.347  3783  9952 I ActivityManager: DSS on for com.samsung.storyservice and scale is 1.0
+03-17 12:39:26.474  3783  8250 I ActivityManager: KPU : put [com.samsung.android.mdm] : 4221 K
+03-17 12:39:26.474  3783  8250 I ActivityManager: Killing 25298:com.samsung.android.mdm/u0a131 (adj 906): DHA:empty #33
+03-17 12:39:27.570  3783 10150 I ActivityManager: Start proc 27362:com.samsung.enhanceservice/5004 for service com.samsung.enhanceservice/.EnhanceService
+03-17 12:39:27.602  3783  7731 I ActivityManager: Start proc 27379:com.samsung.dcmservice/5004 for service com.samsung.dcmservice/.DCMService
+03-17 12:39:27.621  3783 28334 I ActivityManager: DSS on for com.samsung.enhanceservice and scale is 1.0
+03-17 12:39:27.672  3783  8237 I ActivityManager: DSS on for com.samsung.dcmservice and scale is 1.0
+03-17 12:39:27.747  3783  9957 I ActivityManager: KPU : put [com.samsung.android.lool] : 8720 K
+03-17 12:39:27.748  3783  9957 I ActivityManager: Killing 13325:com.samsung.android.lool/1000 (adj 906): DHA:empty #33
+03-17 12:39:27.759  3783  8250 I ActivityManager: KPU : put [com.samsung.android.mateagent] : 8923 K
+03-17 12:39:27.759  3783  8250 I ActivityManager: Killing 25364:com.samsung.android.mateagent/u0a42 (adj 906): DHA:empty #33
+03-17 12:39:28.196  3783  7731 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: from pid 27394
+03-17 12:39:28.459  3783  8251 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000 on display 0
+03-17 12:39:28.514  3783  8267 I ActivityManager: Start proc 27505:com.tiket.gits/u0a234 for activity com.tiket.gits/.v2splash.SplashV2Activity
+03-17 12:39:28.535  3783  8220 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+03-17 12:39:28.957  3783  8260 I ActivityManager: KPU : put [com.samsung.android.mateagent:service] : 6768 K
+03-17 12:39:28.957  3783  8260 I ActivityManager: Killing 24830:com.samsung.android.mateagent:service/u0a42 (adj 906): DHA:empty #33
+03-17 12:39:29.986  3783  3833 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s486ms
+03-17 12:39:32.845  3783  8250 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s345ms
+03-17 12:39:33.995  3783  7731 I ActivityManager: Start proc 28378:com.android.chrome:webview_service/u0a145 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+03-17 12:39:34.044  3783  3810 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+03-17 12:39:46.045  3783  8260 I ActivityManager: START u0 {act=null typ=null flg=0x400000 cmp=ComponentInfo{com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity}} from uid 10234 on display 0
+03-17 12:39:46.628  3783  4251 I ActivityManager: Start proc 29819:com.sec.android.inputmethod:spellcheckerService/u0a162 for service com.sec.android.inputmethod/.base.spellcheckservice.SamsungIMESpellCheckerService
+03-17 12:39:46.679  3783 10017 I ActivityManager: DSS on for com.sec.android.inputmethod and scale is 1.0
+03-17 12:39:47.014  3783  3833 I ActivityManager: Displayed com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity: +947ms
+03-17 12:39:47.207  3783  3810 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: from pid 29797
+03-17 12:39:47.207  3783  3810 I ActivityManager: Killing 27505:com.tiket.gits/u0a234 (adj 0): stop com.tiket.gits cause from pid 29797
+03-17 12:39:47.298  3783  3819 I ActivityManager: Start proc 29894:com.samsung.android.scloud:contentsync/5009 for broadcast com.samsung.android.scloud/.cloudagent.detector.DetectorReceiver
+03-17 12:39:47.333  3783  9952 I ActivityManager: DSS on for com.samsung.android.scloud and scale is 1.0
+03-17 12:39:47.477  3783  7709 I ActivityManager: KPU : put [com.samsung.android.bbc.bbcagent] : 5249 K
+03-17 12:39:47.477  3783  7709 I ActivityManager: Killing 23766:com.samsung.android.bbc.bbcagent/1000 (adj 906): DHA:empty #33
+03-17 12:39:53.669  3783 24675 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: from pid 30493
+03-17 12:39:54.198  3783  7582 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: clear data
+03-17 12:39:54.209  3783  3819 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=-1: clearApplicationUserData
+03-17 12:39:55.008  3783  7732 I ActivityManager: Force stopping com.tiket.gits appid=10234 user=0: from pid 30694
+03-17 12:39:55.272  3783 28334 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000 on display 0
+03-17 12:39:55.319  3783 17422 I ActivityManager: Start proc 30799:com.tiket.gits/u0a234 for activity com.tiket.gits/.v2splash.SplashV2Activity
+03-17 12:39:55.337  3783  8326 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+03-17 12:39:56.612  3783  3833 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s318ms
+03-17 12:39:56.894  3783 10017 I ActivityManager: KPU : put [com.android.settings] : 22082 K
+03-17 12:39:56.894  3783 10017 I ActivityManager: Killing 24283:com.android.settings/1000 (adj 906): DHA:empty #33
+03-17 12:39:59.476  3783  9957 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s182ms
+03-17 12:40:09.928  3783  8251 I ActivityManager: START u0 {act=null typ=null flg=0x400000 cmp=ComponentInfo{com.tiket.gits/com.tiket.android.auth.logincontainer.view.LoginContainerActivity}} from uid 10234 on display 0
