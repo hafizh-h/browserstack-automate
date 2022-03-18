@@ -1,0 +1,52 @@
+03-18 04:54:28.756  5748 19611 I ActivityManager: Force stopping com.android.chrome appid=10197 user=-1: set debug app
+03-18 04:54:28.757  5748 19611 I ActivityManager: Killing 28132:com.android.chrome:webview_service/u0a197 (adj 904): stop com.android.chrome,set debug app
+03-18 04:54:28.761  5748 19611 I ActivityManager: Killing 25299:com.google.android.googlequicksearchbox:search/u0a117 (adj 0): stop com.android.chrome,set debug app
+03-18 04:54:29.797  5748  5779 I ActivityManager: Start proc 331:com.google.android.googlequicksearchbox:search/u0a117 for service com.google.android.googlequicksearchbox/com.google.android.apps.gsa.nowoverlayservice.DrawerOverlayService
+03-18 04:54:29.828  5748 20937 I ActivityManager: DSS on for com.google.android.googlequicksearchbox and scale is 1.0
+03-18 04:54:30.528  5748  5779 I ActivityManager: Start proc 525:com.google.process.gapps/u0a44 for content provider com.google.android.gsf/.settings.GoogleSettingsProvider
+03-18 04:54:30.550  5748 20333 I ActivityManager: Force stopping com.tiket.gits appid=10248 user=0: from pid 532 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+03-18 04:54:30.567  5748 19611 I ActivityManager: DSS on for com.google.android.gsf and scale is 1.0
+03-18 04:54:30.619  5748 19611 I ActivityManager: Force stopping com.tiket.gits appid=10248 user=0: clear data
+03-18 04:54:30.623  5748  5777 I ActivityManager: Force stopping com.tiket.gits appid=10248 user=-1: clearApplicationUserData
+03-18 04:54:30.765  5748  6319 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10242 user=0: from pid 585 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+03-18 04:54:31.046  5748  6319 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10241 user=0: start instr
+03-18 04:54:31.101  5748  5779 I ActivityManager: Start proc 639:io.appium.uiautomator2.server/u0a241 for added application io.appium.uiautomator2.server
+03-18 04:54:31.154  5748  6319 I ActivityManager: DSS on for io.appium.uiautomator2.server and scale is 1.0
+03-18 04:54:34.091  5748 19986 I ActivityManager: Force stopping com.tiket.gits appid=10248 user=0: from pid 1029 caller com.android.server.am.ActivityManagerShellCommand.runStartActivity:412
+03-18 04:54:34.367  5748 19986 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000
+03-18 04:54:34.389  5748 19986 I ActivityManager: [IOP] sourceDir : /data/app/com.tiket.gits-6R4sCHWk88H1vFP7VFA4dQ== in ActivityStacksupervisor
+03-18 04:54:34.428  5748  5779 I ActivityManager: Start proc 1110:com.tiket.gits/u0a248 for activity com.tiket.gits/.v2splash.SplashV2Activity
+03-18 04:54:34.441  5748 19611 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+03-18 04:54:34.929  5748  5777 I ActivityManager: Killing 32340:ACMS.Process/1000 (adj -10000): start timeout
+03-18 04:54:34.951  5748  5779 I ActivityManager: Start proc 1223:com.sec.spp.push/u0a73 for broadcast com.sec.spp.push/.monitor.SystemStateMoniter
+03-18 04:54:34.968  5748  6319 I ActivityManager: DSS on for com.sec.spp.push and scale is 1.0
+03-18 04:54:35.055  5748  5779 I ActivityManager: Start proc 1252:com.android.chrome/u0a197 for broadcast com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+03-18 04:54:35.090  5748 19611 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+03-18 04:54:35.228  5748  5779 I ActivityManager: Start proc 1325:com.android.documentsui/u0a26 for broadcast com.android.documentsui/.PackageReceiver
+03-18 04:54:35.244  5748  6319 I ActivityManager: DSS on for com.android.documentsui and scale is 1.0
+03-18 04:54:35.360  5748  5779 I ActivityManager: Start proc 1377:com.microsoft.appmanager/u0a119 for broadcast com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver
+03-18 04:54:35.394  5748 20333 I ActivityManager: DSS on for com.microsoft.appmanager and scale is 1.0
+03-18 04:54:35.525  5748  5779 I ActivityManager: Start proc 1450:com.samsung.android.mdx/u0a59 for content provider com.samsung.android.mdx/.windowslink.tileservice.StateContentProvider
+03-18 04:54:35.565  5748 20333 I ActivityManager: DSS on for com.samsung.android.mdx and scale is 1.0
+03-18 04:54:36.193  5748  5779 I ActivityManager: Start proc 1708:com.samsung.android.messaging/u0a84 for content provider com.samsung.android.messaging/.service.preference.PreferenceProvider
+03-18 04:54:36.227  5748 19288 I ActivityManager: DSS on for com.samsung.android.messaging and scale is 1.0
+03-18 04:54:36.724  5748 20351 I ActivityManager: Killing 25157:com.sec.android.app.soundalive/u0a99 (adj 906): empty #31
+03-18 04:54:36.740  5748  5779 I ActivityManager: Start proc 1838:com.samsung.android.ipsgeofence/5017 for broadcast com.samsung.android.ipsgeofence/.task.receivers.ClientDataClearedEventReceiver
+03-18 04:54:36.822  5748 19151 I ActivityManager: DSS on for com.samsung.android.ipsgeofence and scale is 1.0
+03-18 04:54:36.944  5748  5789 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +2s525ms (total +13m43s212ms)
+03-18 04:54:37.102  5748  6319 I ActivityManager: Killing 25168:com.samsung.android.kidsinstaller/u0a128 (adj 906): empty #31
+03-18 04:54:37.139  5748  5779 I ActivityManager: Start proc 1898:com.samsung.mlp/5004 for broadcast com.samsung.mlp/.platform.framework.LPBroadcastListener
+03-18 04:54:37.164  5748 20333 I ActivityManager: DSS on for com.samsung.mlp and scale is 1.0
+03-18 04:54:37.259  5748 19611 I ActivityManager: Killing 25131:com.android.settings:QuickSettingsTile/1000 (adj 906): empty #31
+03-18 04:54:37.283  5748  5779 I ActivityManager: Start proc 1933:com.samsung.storyservice/5004 for broadcast com.samsung.storyservice/.framework.StaticBroadcastReceiver
+03-18 04:54:37.340  5748 20937 I ActivityManager: DSS on for com.samsung.storyservice and scale is 1.0
+03-18 04:54:37.908  5748 20937 I ActivityManager: Killing 26038:com.samsung.android.sm.policy/u0a127 (adj 906): empty #31
+03-18 04:54:37.999  5748 20333 I ActivityManager: Killing 25705:com.samsung.android.app.aodservice:provider/u0a9 (adj 906): empty #31
+03-18 04:54:39.885  5748 19986 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +5s472ms (total +13m46s159ms)
+03-18 04:54:40.424  5748  5779 I ActivityManager: Start proc 2369:com.android.chrome:webview_service/u0a197 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+03-18 04:54:40.453  5748  5779 I ActivityManager: SA, print process name forked by webview_zygote : com.android.chrome:sandboxed_process0
+03-18 04:54:40.469  5748 20937 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+03-18 04:54:40.487  5748  5779 I ActivityManager: Start proc 2387:com.android.chrome:sandboxed_process0/u0i99 for webview_service com.tiket.gits/org.chromium.content.app.SandboxedProcessService0
+03-18 04:54:40.508  5748 19151 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+03-18 04:54:45.010  5748 19151 I ActivityManager: Killing 26413:com.android.providers.calendar/u0a77 (adj 906): empty #31
+03-18 04:54:45.324  5748 20937 I ActivityManager: Killing 27059:com.wssyncmldm/1000 (adj 906): empty #31
