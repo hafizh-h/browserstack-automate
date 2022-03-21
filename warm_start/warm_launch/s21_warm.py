@@ -1,5 +1,4 @@
 import time
-import yaml
 import MySQLdb
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
@@ -18,8 +17,6 @@ desired_caps = {
     "deviceName": "Samsung Galaxy S21",
     "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
-
-des_caps_data = yaml.safe_dump(desired_caps, allow_unicode=True, default_flow_style=False, sort_keys=False)
 
 iteration = 10
 
@@ -70,19 +67,40 @@ for i in range(iteration):
 
     driver.quit()
 
-    perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
-    perf_file = open(desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(i + 1) + ".txt", "w")
+    perf_metrics = list(
+        filter(lambda perf: 'I ActivityManager' in perf, log_messages))
+
+    displayed_metrics = list(
+        filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
+    fd_metrics = list(filter(lambda fd: 'Fully drawn com.tiket.gits/.v2splash.SplashV2Activity' in fd, perf_metrics))
+
+    warm_displayed = displayed_metrics[1:]
+    warm_fully_drawn = fd_metrics[1:]
+
+    conv_displayed = "".join(warm_displayed)
+    conv_fully_drawn = "".join(warm_fully_drawn)
+
+    sliced_displayed = conv_displayed[103:]
+    sliced_fully_drawn = conv_fully_drawn[105:]
+
+    perf_file = open(
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+            i + 1) + ".txt", "w")
     for j in perf_metrics:
         perf_file.write(j + "\n")
     perf_file.close()
 
-    r_perf_file = open(desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(i + 1) + ".txt", "r")
-    perf_data = r_perf_file.read()
-    r_perf_file.close()
-
     db = MySQLdb.connect("localhost", "root", "", "automation_test")
     cursor = db.cursor()
-    query = "INSERT INTO device_log (log, desired_caps) VALUES (%s, %s)"
-    cursor.execute(query, (perf_data, des_caps_data))
+
+    columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
+    values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
+    insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
+    cursor.execute(insert_sql)
+    db.commit()
+
+    update_sql = "UPDATE %s SET displayed = '%s', fully_drawn = '%s' ORDER BY id DESC LIMIT 1" % (
+    'device_log', sliced_displayed, sliced_fully_drawn)
+    cursor.execute(update_sql)
     db.commit()
     db.close()

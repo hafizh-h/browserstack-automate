@@ -45,16 +45,24 @@ $result = mysqli_query($con,"SELECT * FROM device_log");
 <table>
 <tr>
    <th>ID</th>
-   <th style="width:70%">Log</th>
-   <th>Desired Capabilities</th>
+   <th>Displayed</th>
+   <th>Fully Drawn</th>
+   <th>Build</th>
+   <th>Device Name</th>
+   <th>Platform Version</th>
+   <th>App</th>
 </tr>
 <?php
 while ($row=mysqli_fetch_array($result))
 {
    echo "<tr>";
    echo "<td>".$row['id']."</td>";
-   echo "<td>".nl2br($row['log'])."</td>";
-   echo "<td>".nl2br($row['desired_caps'])."</td>";
+   echo "<td>".$row['displayed']."</td>";
+   echo "<td>".$row['fully_drawn']."</td>";
+   echo "<td>".$row['build']."</td>";
+   echo "<td>".$row['deviceName']."</td>";
+   echo "<td>".$row['platformVersion']."</td>";
+   echo "<td>".$row['app']."</td>";
    echo "</tr>";
 }
 mysqli_close($con);
