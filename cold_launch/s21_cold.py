@@ -28,38 +28,52 @@ desired_caps = {
     "platformName": "android",
     "platformVersion": "11.0",
     "deviceName": "Samsung Galaxy S21",
-    "app": "bs://743efc2e4e1a72a41bfd1eb69b50b59321063aba"
+    "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
 
-driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
-session_id = driver.session_id
+iteration = 2
+for i in range(iteration):
+    driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
+                              desired_caps)
+    session_id = driver.session_id
 
-wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 10)
 
-btn_cancel_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
-)
-btn_cancel_element.click()
+    btn_cancel_element = wait.until(
+        ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
+    )
+    btn_cancel_element.click()
 
-btn_close_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-)
-btn_close_element.click()
+    btn_close_element = wait.until(
+        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+    )
+    btn_close_element.click()
 
-btn_login_menu_element = wait.until(
-    ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
-                                                "@text='Masuk')]"))
-)
-btn_login_menu_element.click()
+    logs = driver.get_log('logcat')
+    log_messages = list(map(lambda log: log['message'], logs))
 
-logs = driver.get_log('logcat')
-log_messages = list(map(lambda log: log['message'], logs))
+    driver.quit()
 
-driver.quit()
+    perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages)) # Filter for ActivityTaskManager
 
-perf_metrics = list(filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
+    # Filter for Displayed and Fully Drawn Metrics
 
-perf_file = open(desired_caps["deviceName"] + " OS "+desired_caps["platformVersion"] + " cold_perf_logs(4.32.0).txt", "w")
-for j in perf_metrics:
-    perf_file.write(j + "\n")
-perf_file.close()
+    displayed_metrics = list(filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
+    fd_metrics = list(filter(lambda fd: 'Fully drawn com.tiket.gits/.v2splash.SplashV2Activity' in fd, perf_metrics))
+
+    # Convert list to string for trimming the displayed and fully drawn metrics only
+
+    conv_displayed = "".join(displayed_metrics)
+    conv_fully_drawn = "".join(fd_metrics)
+
+    # Slice displayed and fully drawn metrics
+    # Currently the sliced method is static by finding the index, have to find a more efficient way
+    # to slice displayed and fully drawn
+    sliced_displayed = conv_displayed[54:]
+    sliced_fully_drawn = conv_fully_drawn[54:]
+
+    perf_file = open(
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(i+1) + ".txt", "w")
+    for j in perf_metrics:
+        perf_file.write(j + "\n")
+    perf_file.close()
