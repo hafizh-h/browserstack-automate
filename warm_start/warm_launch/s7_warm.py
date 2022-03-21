@@ -18,7 +18,7 @@ desired_caps = {
     "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
 }
 
-iteration = 1
+iteration = 10
 
 for i in range(iteration):
     driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
