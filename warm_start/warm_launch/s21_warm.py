@@ -68,7 +68,7 @@ for i in range(iteration):
     driver.quit()
 
     perf_metrics = list(
-        filter(lambda perf: 'I ActivityManager' in perf, log_messages))
+        filter(lambda perf: 'I ActivityTaskManager' in perf, log_messages))
 
     displayed_metrics = list(
         filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
@@ -80,8 +80,8 @@ for i in range(iteration):
     conv_displayed = "".join(warm_displayed)
     conv_fully_drawn = "".join(warm_fully_drawn)
 
-    sliced_displayed = conv_displayed[103:]
-    sliced_fully_drawn = conv_fully_drawn[105:]
+    sliced_displayed = conv_displayed[107:]
+    sliced_fully_drawn = conv_fully_drawn[109:]
 
     perf_file = open(
         desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
