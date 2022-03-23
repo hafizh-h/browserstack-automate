@@ -9,7 +9,7 @@ $result = mysqli_query($con,"SELECT * FROM device_log");
 <!DOCTYPE html>
 <head>
    <meta charset="UTF-8">
-   <title>Automation Testing Device Log</title>
+   <title>Automated Testing Device Log</title>
    <style>
    h2{
       text-align:center; }
@@ -63,11 +63,24 @@ $result = mysqli_query($con,"SELECT * FROM device_log");
             <td style="background-color: #c1d5fb">App</td>
             <td style="background-color: #c1d5fb"><?php echo $desired_caps['app']; ?></td>
         </tr>
+        <tr>
+            <td style="background-color: #c1d5fb">Type</td>
+            <td style="background-color: #c1d5fb">
+                <?php
+                if($desired_caps['type'] == 'cold') {
+                    echo 'Cold Launch';
+                }
+                elseif($desired_caps['type'] == 'warm') {
+                    echo 'Warm Launch';
+                }
+				?>
+            </td>
+        </tr>
     </table>
     <br>
     <table style="text-align:center">
         <tr>
-           <th>ID</th>
+           <th>Iteration</th>
            <th>Displayed</th>
            <th>Fully Drawn</th>
         </tr>
@@ -75,7 +88,7 @@ $result = mysqli_query($con,"SELECT * FROM device_log");
         while($row = mysqli_fetch_array($result))
         {
            echo "<tr>";
-           echo "<td>".$row['id']."</td>";
+           echo "<td>".$row['iteration']."</td>";
            echo "<td>".$row['displayed']."</td>";
            echo "<td>".$row['fully_drawn']."</td>";
            echo "</tr>";

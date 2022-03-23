@@ -10,7 +10,7 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 desired_caps = {
     "project": "Core Platform",
     "build": "Launch Time 4.31.2 Release",
-    "name": "Samsung Galaxy S10 Warm",
+    "name": "Samsung Galaxy S10 Cold",
     "platformName": "android",
     "platformVersion": "9.0",
     "deviceName": "Samsung Galaxy S10",

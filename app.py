@@ -1,12 +1,213 @@
-from flask import Flask
+from flask import Flask, render_template, request, url_for
 import subprocess as sp
+import time
+import MySQLdb
+from appium import webdriver
+from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+from werkzeug.utils import redirect
 
 app = Flask(__name__)
 
 @app.route("/")
 def main():
-    out = sp.run(["php", "index.php"], stdout=sp.PIPE)
+    return render_template('home_page.html')
+
+@app.route("/result_page")
+def result_page():
+    out = sp.run(["php", "result_page.php"], stdout=sp.PIPE)
     return out.stdout
+
+@app.route('/testing', methods=['POST', 'GET'])
+def testing():
+    userName = "hafizh_783gSd"
+    accessKey = "cpKChBFWNYG4qaA4dj1H"
+
+    if request.method == 'POST':
+        build = request.form['build']
+        name = request.form['name']
+        platformName = request.form['platformName']
+        platformVersion = request.form['platformVersion']
+        deviceName = request.form['deviceName']
+        app = request.form['app']
+        iteration = int(request.form['iteration'])
+        type = request.form['type']
+
+        desired_caps = {
+            "project": "Core Platform",
+            "build": build,
+            "name": name,
+            "platformName": platformName,
+            "platformVersion": platformVersion,
+            "deviceName": deviceName,
+            "app": app
+        }
+
+        if type == "cold":
+            for i in range(iteration):
+                driver = webdriver.Remote(
+                    "https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
+                session_id = driver.session_id
+                wait = WebDriverWait(driver, 10)
+
+                btn_cancel_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
+                )
+                btn_cancel_element.click()
+
+                btn_close_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+                )
+                btn_close_element.click()
+
+                btn_login_menu_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
+                                         "@text='Masuk')]"))
+                )
+                btn_login_menu_element.click()
+
+                logs = driver.get_log('logcat')
+                log_messages = list(map(lambda log: log['message'], logs))
+
+                driver.quit()
+
+                perf_metrics = list(
+                    filter(lambda perf: 'I ActivityManager' in perf, log_messages))
+
+                displayed_metrics = list(
+                    filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
+                fd_metrics = list(
+                    filter(lambda fd: 'Fully drawn com.tiket.gits/.v2splash.SplashV2Activity' in fd, perf_metrics))
+
+                conv_displayed = "".join(displayed_metrics)
+                conv_fully_drawn = "".join(fd_metrics)
+
+                sliced_displayed = conv_displayed[103:]
+                sliced_fully_drawn = conv_fully_drawn[105:]
+
+                perf_file = open(
+                    desired_caps["deviceName"] + " OS " + desired_caps[
+                        "platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
+                        i + 1) + ".txt", "w")
+                for j in perf_metrics:
+                    perf_file.write(j + "\n")
+                perf_file.close()
+
+                db = MySQLdb.connect("localhost", "root", "", "automation_test")
+                cursor = db.cursor()
+
+                columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
+                values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
+                insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
+                cursor.execute(insert_sql)
+                db.commit()
+
+                update_sql = "UPDATE %s SET displayed = '%s', fully_drawn = '%s', type = '%s', iteration = %d ORDER BY id DESC LIMIT 1" % (
+                    'device_log', sliced_displayed, sliced_fully_drawn, type, i + 1)
+                cursor.execute(update_sql)
+                db.commit()
+                db.close()
+
+        elif type == "warm":
+            for i in range(iteration):
+                driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
+                                          desired_caps)
+                session_id = driver.session_id
+                wait = WebDriverWait(driver, 10)
+
+                btn_cancel_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
+                )
+                btn_cancel_element.click()
+
+                btn_close_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+                )
+                btn_close_element.click()
+
+                btn_login_menu_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
+                                         "@text='Masuk')]"))
+                )
+                btn_login_menu_element.click()
+
+                driver.close_app()
+                time.sleep(5)
+
+                driver.launch_app()
+
+                btn_cancel_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
+                )
+                btn_cancel_element.click()
+
+                btn_close_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+                )
+                btn_close_element.click()
+
+                btn_login_menu_element = wait.until(
+                    ec.element_to_be_clickable(
+                        (MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
+                                         "@text='Masuk')]"))
+                )
+                btn_login_menu_element.click()
+
+                logs = driver.get_log('logcat')
+                log_messages = list(map(lambda log: log['message'], logs))
+
+                driver.quit()
+
+                perf_metrics = list(
+                    filter(lambda perf: 'I ActivityManager' in perf, log_messages))
+
+                displayed_metrics = list(
+                    filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
+                fd_metrics = list(
+                    filter(lambda fd: 'Fully drawn com.tiket.gits/.v2splash.SplashV2Activity' in fd, perf_metrics))
+
+                warm_displayed = displayed_metrics[1:]
+                warm_fully_drawn = fd_metrics[1:]
+
+                conv_displayed = "".join(warm_displayed)
+                conv_fully_drawn = "".join(warm_fully_drawn)
+
+                sliced_displayed = conv_displayed[103:]
+                sliced_fully_drawn = conv_fully_drawn[105:]
+
+                perf_file = open(
+                    desired_caps["deviceName"] + " OS " + desired_caps[
+                        "platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+                        i + 1) + ".txt", "w")
+                for j in perf_metrics:
+                    perf_file.write(j + "\n")
+                perf_file.close()
+
+                db = MySQLdb.connect("localhost", "root", "", "automation_test")
+                cursor = db.cursor()
+
+                columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
+                values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
+                insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
+                cursor.execute(insert_sql)
+                db.commit()
+
+                update_sql = "UPDATE %s SET displayed = '%s', fully_drawn = '%s', type = '%s', iteration = %d ORDER BY id DESC LIMIT 1" % (
+                    'device_log', sliced_displayed, sliced_fully_drawn, type, i + 1)
+                cursor.execute(update_sql)
+                db.commit()
+                db.close()
+
+        return redirect(url_for('result_page'))
 
 if __name__ == "__main__":
     app.run()

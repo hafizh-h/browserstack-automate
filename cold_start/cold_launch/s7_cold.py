@@ -11,7 +11,7 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 desired_caps = {
     "project": "Core Platform",
     "build": "Launch Time 4.31.2 Release",
-    "name": "Samsung Galaxy S7 Warm",
+    "name": "Samsung Galaxy S7 Cold",
     "platformName": "android",
     "platformVersion": "6.0",
     "deviceName": "Samsung Galaxy S7",
