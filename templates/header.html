@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <title>Automated Testing Device Log</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% block headinclude %}
+    {% endblock %}
+    <style>
+      /* .bggr{
+        border: 1px solid black;
+      } */
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class=" navbar fixed-top navbar-inverse navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div class="row ">
+            <div class="nav-item ">
+              <a class="navbar-brand" href="/" style="color: white;">Automated Testing Device Log</a>
+            </div>
+            <div class="nav-item ">
+              <a class="nav-link" href="/" style="color: #78e6ff;">Testing</a>
+            </div>
+            <div class="nav-item ">
+              <a class="nav-link" href="/reports" style="color: #78e6ff;">Reports</a>
+            </div> {% block nav_items %} {% endblock %}
+          </div>
+        </div>
+      </nav>
+      <div class="col-xs-12" style="height:100px;"></div>
+      {% block content %}
+      {% endblock %}
+    </div>
+    </footer>
+    <script src="{{ url_for('static',filename='popper.min.js') }}" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='bootstrap.min.js') }}" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -58,12 +58,14 @@ for i in range(iteration):
     sliced_displayed = conv_displayed[103:]
     sliced_fully_drawn = conv_fully_drawn[105:]
 
-    perf_file = open(
+    log_metrics = displayed_metrics + fd_metrics
+
+    log_file = open(
         desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
             i + 1) + ".txt", "w")
-    for j in perf_metrics:
-        perf_file.write(j + "\n")
-    perf_file.close()
+    for j in log_metrics:
+        log_file.write(j + "\n")
+    log_file.close()
 
     db = MySQLdb.connect("localhost", "root", "", "automation_test")
     cursor = db.cursor()

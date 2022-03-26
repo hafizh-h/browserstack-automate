@@ -1,4 +1,3 @@
-import time
 import MySQLdb
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
@@ -41,27 +40,6 @@ for i in range(iteration):
     )
     btn_login_menu_element.click()
 
-    driver.close_app()
-    time.sleep(5)
-
-    driver.launch_app()
-
-    btn_cancel_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
-    )
-    btn_cancel_element.click()
-
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
-
-    btn_login_menu_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
-                                                    "@text='Masuk')]"))
-    )
-    btn_login_menu_element.click()
-
     logs = driver.get_log('logcat')
     log_messages = list(map(lambda log: log['message'], logs))
 
@@ -74,21 +52,20 @@ for i in range(iteration):
         filter(lambda disp: 'Displayed com.tiket.gits/.v2splash.SplashV2Activity' in disp, perf_metrics))
     fd_metrics = list(filter(lambda fd: 'Fully drawn com.tiket.gits/.v2splash.SplashV2Activity' in fd, perf_metrics))
 
-    warm_displayed = displayed_metrics[1:]
-    warm_fully_drawn = fd_metrics[1:]
-
-    conv_displayed = "".join(warm_displayed)
-    conv_fully_drawn = "".join(warm_fully_drawn)
+    conv_displayed = "".join(displayed_metrics)
+    conv_fully_drawn = "".join(fd_metrics)
 
     sliced_displayed = conv_displayed[103:]
     sliced_fully_drawn = conv_fully_drawn[105:]
 
-    perf_file = open(
-        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+    log_metrics = displayed_metrics + fd_metrics
+
+    log_file = open(
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
             i + 1) + ".txt", "w")
-    for j in perf_metrics:
-        perf_file.write(j + "\n")
-    perf_file.close()
+    for j in log_metrics:
+        log_file.write(j + "\n")
+    log_file.close()
 
     db = MySQLdb.connect("localhost", "root", "", "automation_test")
     cursor = db.cursor()
