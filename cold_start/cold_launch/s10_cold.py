@@ -67,7 +67,7 @@ for i in range(iteration):
         log_file.write(j + "\n")
     log_file.close()
 
-    db = MySQLdb.connect("localhost", "root", "", "automation_test")
+    db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
     cursor = db.cursor()
 
     columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())

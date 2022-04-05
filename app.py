@@ -3,6 +3,7 @@ import time
 import MySQLdb
 import statistics
 from flask import Flask, render_template, request, url_for
+from flask_mail import Mail, Message
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,6 +11,15 @@ from selenium.webdriver.support import expected_conditions as ec
 from werkzeug.utils import redirect
 
 app = Flask(__name__)
+mail = Mail(app)
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'okta.salsabila@tiket.com'
+app.config['MAIL_PASSWORD'] = 'ypjjxpbyrnhelgyd'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
 
 def convert_time_to_float(str):
     time = list(map(int, re.split('[sm]', str)[:-2]))
@@ -22,17 +32,17 @@ def convert_time_to_float(str):
 def main():
     return render_template('index.html')
 
-@app.route('/results',methods=['GET','POST'])
-def results():
-    db = MySQLdb.connect("localhost", "root", "", "automation_test")
+@app.route('/results/<id>',methods=['GET','POST'])
+def results(id):
+    db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
     cur = db.cursor()
-    cur.execute("SELECT * FROM device_log ORDER BY id DESC LIMIT 1")
+    cur.execute("SELECT * FROM device_log WHERE id = " + id)
     data = cur.fetchall()
     return render_template("results.html",data=data)
 
 @app.route('/reports',methods=['GET','POST'])
 def reports():
-    db = MySQLdb.connect("localhost", "root", "", "automation_test")
+    db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
     cur = db.cursor()
     cur.execute("SELECT * FROM device_log")
     data = cur.fetchall()
@@ -230,22 +240,32 @@ def testing():
         displayed_avg = statistics.mean(displayed_time)
         fully_drawn_avg = statistics.mean(fully_drawn_time)
 
-        db = MySQLdb.connect("localhost", "root", "", "automation_test")
+        db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
         cursor = db.cursor()
 
         columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
         values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
         insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
         cursor.execute(insert_sql)
+        id = int(cursor.lastrowid)
         db.commit()
 
-        update_sql = "UPDATE %s SET displayed_avg = %f, fully_drawn_avg = %f, type = '%s', iteration = %d ORDER BY id DESC LIMIT 1" % (
-            'device_log', displayed_avg, fully_drawn_avg, type, iteration)
+        update_sql = "UPDATE %s SET displayed_avg = %f, fully_drawn_avg = %f, type = '%s', iteration = %d WHERE id = %d" % (
+            'device_log', displayed_avg, fully_drawn_avg, type, iteration, id)
         cursor.execute(update_sql)
         db.commit()
         db.close()
 
-        return redirect(url_for('results'))
+        msg = Message(
+            'Automation Testing Results',
+            sender='okta.salsabila@tiket.com',
+            recipients=['minochndk@gmail.com', 'chandika.salsabila@gmail.com']
+        )
+
+        msg.body = 'Redirect to this URL: http://localhost:5000/results/' + str(id)
+        mail.send(msg)
+
+        return redirect(url_for('results', id=id))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
