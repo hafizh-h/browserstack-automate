@@ -23,15 +23,15 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.31.2 Release",
+    "build": "Launch Time 4.32.1 FD Fix",
     "name": "Xiaomi Redmi Note Cold",
     "platformName": "android",
     "platformVersion": "9.0",
     "deviceName": "Xiaomi Redmi Note 8",
-    "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
+    "app": "bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24"
 }
 
-iteration = 2
+iteration = 1
 for i in range(iteration):
     driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
                               desired_caps)
@@ -44,10 +44,10 @@ for i in range(iteration):
     )
     btn_cancel_element.click()
 
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
+    # btn_close_element = wait.until(
+    #     ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+    # )
+    # btn_close_element.click()
 
     logs = driver.get_log('logcat')
     log_messages = list(map(lambda log: log['message'], logs))

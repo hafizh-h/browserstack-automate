@@ -17,18 +17,20 @@ App for v4.31.2 Release = v4.31.2-RC111-HEAD-020312-release.apk
 App url: bs://43d9df000cc921878557fe78d79480c0ea98c4a7
 App for v4.32.0 Release = v4.32.0-RC119-HEAD-090310-release.apk
 App url: bs://743efc2e4e1a72a41bfd1eb69b50b59321063aba
+App for v4.32.1 FD Fix Release = v4.32.1-FullyDrawnFix-release.apk
+App url: bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24
 '''
 userName = "hafizh_783gSd"
 accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.32.0 Release",
+    "build": "Launch Time 4.32.1 FD Fix",
     "name": "Samsung Galaxy S21 Cold",
     "platformName": "android",
     "platformVersion": "11.0",
     "deviceName": "Samsung Galaxy S21",
-    "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
+    "app": "bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24"
 }
 
 iteration = 2
@@ -44,10 +46,10 @@ for i in range(iteration):
     )
     btn_cancel_element.click()
 
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
+    # btn_close_element = wait.until(
+    #     ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
+    # )
+    # btn_close_element.click()
 
     logs = driver.get_log('logcat')
     log_messages = list(map(lambda log: log['message'], logs))
