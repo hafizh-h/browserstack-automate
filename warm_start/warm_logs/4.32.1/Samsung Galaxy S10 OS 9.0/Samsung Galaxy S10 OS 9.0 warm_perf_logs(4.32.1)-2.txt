@@ -1,0 +1,4 @@
+04-06 23:35:37.399  5741  5783 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s412ms
+04-06 23:35:53.144  5741  5783 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s228ms
+04-06 23:35:40.469  5741 20958 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s487ms
+04-06 23:35:56.150  5741 20412 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s247ms

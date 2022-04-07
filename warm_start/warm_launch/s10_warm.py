@@ -1,5 +1,4 @@
 import time
-import MySQLdb
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,12 +9,12 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.31.2 Release",
-    "name": "Samsung Galaxy S10 Warm",
+    "build": "Launch Time 4.32.1 Release",
+    "name": "Samsung Galaxy Warm",
     "platformName": "android",
     "platformVersion": "9.0",
     "deviceName": "Samsung Galaxy S10",
-    "app": "bs://43d9df000cc921878557fe78d79480c0ea98c4a7"
+    "app": "bs://c73b4f2017a6cef4bb572f782e4e2238ad5e9818"
 }
 
 iteration = 10
@@ -29,11 +28,6 @@ for i in range(iteration):
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
     )
     btn_cancel_element.click()
-
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
 
     btn_login_menu_element = wait.until(
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
@@ -50,11 +44,6 @@ for i in range(iteration):
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
     )
     btn_cancel_element.click()
-
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
 
     btn_login_menu_element = wait.until(
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
@@ -86,23 +75,8 @@ for i in range(iteration):
     log_metrics = displayed_metrics + fd_metrics
 
     log_file = open(
-        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " warm_perf_logs(4.32.1)-" + str(
             i + 1) + ".txt", "w")
     for j in log_metrics:
         log_file.write(j + "\n")
     log_file.close()
-
-    db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
-    cursor = db.cursor()
-
-    columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
-    values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
-    insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
-    cursor.execute(insert_sql)
-    db.commit()
-
-    update_sql = "UPDATE %s SET displayed = '%s', fully_drawn = '%s' ORDER BY id DESC LIMIT 1" % (
-    'device_log', sliced_displayed, sliced_fully_drawn)
-    cursor.execute(update_sql)
-    db.commit()
-    db.close()

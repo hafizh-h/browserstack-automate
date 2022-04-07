@@ -1,0 +1,425 @@
+{% extends "header.html" %}
+{% block headinclude %}
+{% endblock %}
+{% block content %}
+<html lang="en">
+<head>
+	<title>Automated Testing Device Log</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wnameth=device-wnameth, initial-scale=1">
+	<script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+	function loading() {
+		$("#loading").show();
+		$("#content").hide();
+	}
+	// ]]>
+	</script>
+	<script type="text/javascript">
+	var deviceObject = {
+	     "Samsung": {
+			"Samsung Galaxy S22 Ultra": ["12.0"],
+			"Samsung Galaxy S22 Plus": ["12.0"],
+			"Samsung Galaxy S22": ["12.0"],
+			"Samsung Galaxy S21": ["12.0", "11.0"],
+			"Samsung Galaxy S21 Ultra": ["11.0"],
+			"Samsung Galaxy S21 Plus": ["11.0"],
+			"Samsung Galaxy S20": ["10.0"],
+			"Samsung Galaxy S20 Plus": ["10.0"],
+			"Samsung Galaxy S20 Ultra": ["10.0"],
+			"Samsung Galaxy Note 20 Ultra": ["10.0"],
+			"Samsung Galaxy Note 20": ["10.0"],
+			"Samsung Galaxy A51": ["10.0"],
+			"Samsung Galaxy A11": ["10.0"],
+			"Samsung Galaxy S9 Plus": ["9.0", "8.0"],
+			"Samsung Galaxy S8 Plus": ["9.0", "7.0"],
+			"Samsung Galaxy S10e": ["9.0"],
+			"Samsung Galaxy S10 Plus": ["9.0"],
+			"Samsung Galaxy S10": ["9.0"],
+			"Samsung Galaxy Note 10 Plus": ["9.0"],
+			"Samsung Galaxy Note 10": ["9.0"],
+			"Samsung Galaxy A10": ["9.0"],
+			"Samsung Galaxy Note 9": ["8.1"],
+			"Samsung Galaxy J7 Prime": ["8.1"],
+			"Samsung Galaxy S9": ["8.0"],
+			"Samsung Galaxy Note 8": ["7.1"],
+			"Samsung Galaxy A8": ["7.1"],
+			"Samsung Galaxy S8": ["7.0"],
+			"Samsung Galaxy S7": ["6.0"],
+			"Samsung Galaxy S6": ["5.0"],
+			"Samsung Galaxy S5": ["4.4"],
+			"Samsung Galaxy Tab S7": ["10.0"],
+			"Samsung Galaxy Tab S6": ["9.0"],
+			"Samsung Galaxy Tab S5e": ["9.0"],
+			"Samsung Galaxy Tab S4": ["8.1"],
+			"Samsung Galaxy Tab S3": ["8.0"],
+			"Samsung Galaxy Tab 4": ["4.4"]
+		},
+	    "Google": {
+			"Google Pixel 6 Pro": ["12.0"],
+			"Google Pixel 6": ["12.0"],
+			"Google Pixel 5": ["12.0", "11.0"],
+			"Google Pixel 4": ["11.0", "10.0"],
+			"Google Pixel 4 XL": ["10.0"],
+			"Google Pixel 3": ["10.0", "9.0"],
+			"Google Pixel 3a XL": ["9.0"],
+			"Google Pixel 3a": ["9.0"],
+			"Google Pixel 3 XL": ["9.0"],
+			"Google Pixel 2": ["9.0", "8.0"],
+			"Google Pixel": ["8.0", "7.1"],
+			"Google Nexus 6": ["6.0", "5.0"],
+			"Google Pixel 5": ["4.4"]
+		},
+		"OnePlus": {
+			"OnePlus 9": ["11.0"],
+			"OnePlus 8": ["10.0"],
+			"OnePlus 7T": ["10.0"],
+			"OnePlus 7": ["9.0"],
+			"OnePlus 6T": ["9.0"]
+		},
+		"Xiaomi": {
+			"Xiaomi Redmi Note 9": ["10.0"],
+			"Xiaomi Redmi Note 8": ["9.0"],
+			"Xiaomi Redmi Note 7": ["9.0"]
+		},
+		"Motorola": {
+			"Motorola Moto G9 Play": ["10.0"],
+			"Motorola Moto G7 Play": ["9.0"],
+			"Motorola Moto X 2nd Gen": ["6.0"]
+		},
+		"Vivo": {
+			"Vivo Y50": ["10.0"]
+		},
+		"Oppo": {
+			"Oppo Reno 6": ["11.0"],
+			"Oppo Reno 3 Pro": ["10.0"]
+		},
+		"Huawei": {
+			"Huawei P30": ["9.0"]
+		},
+		"iPhone": {
+			"iPhone XS": ["15", "14", "13", "12"],
+			"iPhone 13 Pro Max": ["15"],
+			"iPhone 13 Pro": ["15"],
+			"iPhone 13 Mini": ["15"],
+			"iPhone 13": ["15"],
+			"iPhone 11 Pro": ["15"],
+			"iPhone 11": ["15"],
+			"iPhone 12 Pro Max": ["14"],
+			"iPhone 12 Pro": ["14"],
+			"iPhone 12 Mini": ["14"],
+			"iPhone 12": ["14"],
+			"iPhone 11 Pro Max": ["14", "13"],
+			"iPhone 11": ["14", "13"],
+			"iPhone 11 Pro": ["13"],
+			"iPhone XS Max": ["12"],
+			"iPhone XR": ["15", "12"],
+			"iPhone X": ["11"],
+			"iPhone 8": ["15", "13", "12", "11"],
+			"iPhone 8 Plus": ["12", "11"],
+			"iPhone 7": ["12", "10"],
+			"iPhone 7 Plus": ["10"],
+			"iPhone 6S": ["12", "11"],
+			"iPhone 6S Plus": ["11"],
+			"iPhone 6": ["11"],
+			"iPhone SE 2020": ["13"],
+			"iPhone SE": ["11"]
+		},
+		"iPad": {
+			"iPad 9th": ["15"],
+			"iPad Pro 12.9 2021": ["14"],
+			"iPad Pro 12.9 2020": ["14", "13"],
+			"iPad Pro 11 2021": ["14"],
+			"iPad Pro 12.9 2018": ["15", "13", "12"],
+			"iPad Mini 2021": ["15"],
+			"iPad 8th": ["14"],
+			"iPad Pro 11 2020": ["13"],
+			"iPad Mini 2019": ["13", "12"],
+			"iPad Air 2019": ["13", "12"],
+			"iPad 7th": ["13"],
+			"iPad Pro 11 2018": ["12"],
+			"iPad Pro 9.7 2016": ["11"],
+			"iPad Pro 12.9 2017": ["11"],
+			"iPad Mini 4": ["11"],
+			"iPad 6th": ["11"],
+			"iPad 5th": ["11"]
+		}
+	}
+	window.onload = function() {
+		var deviceType1 = document.getElementById("deviceType1");
+		var deviceType2 = document.getElementById("deviceType2");
+		var deviceType3 = document.getElementById("deviceType3");
+		var deviceType4 = document.getElementById("deviceType4");
+		var deviceType5 = document.getElementById("deviceType5");
+		var deviceType6 = document.getElementById("deviceType6");
+		var deviceName1 = document.getElementById("deviceName1");
+		var deviceName2 = document.getElementById("deviceName2");
+		var deviceName3 = document.getElementById("deviceName3");
+		var deviceName4 = document.getElementById("deviceName4");
+		var deviceName5 = document.getElementById("deviceName5");
+		var deviceName6 = document.getElementById("deviceName6");
+		var platformVersion1 = document.getElementById("platformVersion1");
+		var platformVersion2 = document.getElementById("platformVersion2");
+		var platformVersion3 = document.getElementById("platformVersion3");
+		var platformVersion4 = document.getElementById("platformVersion4");
+		var platformVersion5 = document.getElementById("platformVersion5");
+		var platformVersion6 = document.getElementById("platformVersion6");
+		for(var x in deviceObject) {
+			deviceType1.options[deviceType1.options.length] = new Option(x, x);
+			deviceType2.options[deviceType2.options.length] = new Option(x, x);
+			deviceType3.options[deviceType3.options.length] = new Option(x, x);
+			deviceType4.options[deviceType4.options.length] = new Option(x, x);
+			deviceType5.options[deviceType5.options.length] = new Option(x, x);
+			deviceType6.options[deviceType6.options.length] = new Option(x, x);
+		}
+		deviceType1.onchange = function() {
+			platformVersion1.length = 1;
+			deviceName1.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName1.options[deviceName1.options.length] = new Option(y, y);
+			}
+		}
+		deviceType2.onchange = function() {
+			platformVersion2.length = 1;
+			deviceName2.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName2.options[deviceName2.options.length] = new Option(y, y);
+			}
+		}
+		deviceType3.onchange = function() {
+			platformVersion3.length = 1;
+			deviceName3.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName3.options[deviceName3.options.length] = new Option(y, y);
+			}
+		}
+		deviceType4.onchange = function() {
+			platformVersion4.length = 1;
+			deviceName4.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName4.options[deviceName4.options.length] = new Option(y, y);
+			}
+		}
+		deviceType5.onchange = function() {
+			platformVersion5.length = 1;
+			deviceName5.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName5.options[deviceName5.options.length] = new Option(y, y);
+			}
+		}
+		deviceType6.onchange = function() {
+			platformVersion6.length = 1;
+			deviceName6.length = 1;
+			for(var y in deviceObject[this.value]) {
+				deviceName6.options[deviceName6.options.length] = new Option(y, y);
+			}
+		}
+		deviceName1.onchange = function() {
+			platformVersion1.length = 1;
+			var z = deviceObject[deviceType1.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion1.options[platformVersion1.options.length] = new Option(z[i], z[i]);
+			}
+		}
+		deviceName2.onchange = function() {
+			platformVersion2.length = 1;
+			var z = deviceObject[deviceType2.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion2.options[platformVersion2.options.length] = new Option(z[i], z[i]);
+			}
+		}
+		deviceName3.onchange = function() {
+			platformVersion3.length = 1;
+			var z = deviceObject[deviceType3.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion3.options[platformVersion3.options.length] = new Option(z[i], z[i]);
+			}
+		}
+		deviceName4.onchange = function() {
+			platformVersion4.length = 1;
+			var z = deviceObject[deviceType4.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion4.options[platformVersion4.options.length] = new Option(z[i], z[i]);
+			}
+		}
+		deviceName5.onchange = function() {
+			platformVersion5.length = 1;
+			var z = deviceObject[deviceType5.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion5.options[platformVersion5.options.length] = new Option(z[i], z[i]);
+			}
+		}
+		deviceName6.onchange = function() {
+			platformVersion6.length = 1;
+			var z = deviceObject[deviceType6.value][this.value];
+			for(var i = 0; i < z.length; i++) {
+				platformVersion6.options[platformVersion6.options.length] = new Option(z[i], z[i]);
+			}
+		}
+	}
+	</script>
+	<style>
+	div#loading {
+		display: none;
+		cursor: wait;
+	}
+	</style>
+</head>
+<body>
+	<div id="loading">
+		<center><br><br><br><br><h3>Please wait...</h3><img src="/static/loading.gif"></center>
+	</div>
+	<div class="container" id="content">
+		<h2 style="text-align:center">Automated Testing<br><br></h2>
+		<form action="/multi_testing" method="POST" style="width:80%; padding-left:200px;">
+			<div class="form-group">
+				<label for="build">Build:</label>
+				<input type="text" class="form-control" name="build" placeholder="Enter build">
+            </div>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" name="name" placeholder="Enter name">
+            </div>
+			<div class="form-group">
+				<label for="platformName">Platform Name: &nbsp;&nbsp;&nbsp;</label>
+				<input type="radio" name="platformName" value="android"> Android &nbsp;&nbsp;&nbsp;
+				<input type="radio" name="platformName" value="ios"> iOS
+            </div>
+			<div class="form-group">
+				<label for="deviceName1">Device Name 1:</label>
+                <select name="deviceType1" class="form-control" id="deviceType1">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName1" class="form-control" id="deviceName1">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion1">Platform Version 1:</label>
+                <select name="platformVersion1" class="form-control" id="platformVersion1">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="deviceName2">Device Name 2:</label>
+                <select name="deviceType2" class="form-control" id="deviceType2">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName2" class="form-control" id="deviceName2">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion2">Platform Version 2:</label>
+                <select name="platformVersion2" class="form-control" id="platformVersion2">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="deviceName3">Device Name 3:</label>
+                <select name="deviceType3" class="form-control" id="deviceType3">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName3" class="form-control" id="deviceName3">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion3">Platform Version 3:</label>
+                <select name="platformVersion3" class="form-control" id="platformVersion3">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+             <div class="form-group">
+				<label for="deviceName4">Device Name 4:</label>
+                <select name="deviceType4" class="form-control" id="deviceType4">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName4" class="form-control" id="deviceName4">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion4">Platform Version 4:</label>
+                <select name="platformVersion4" class="form-control" id="platformVersion4">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="deviceName5">Device Name 5:</label>
+                <select name="deviceType5" class="form-control" id="deviceType5">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName5" class="form-control" id="deviceName5">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion5">Platform Version 5:</label>
+                <select name="platformVersion5" class="form-control" id="platformVersion5">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="deviceName6">Device Name 6:</label>
+                <select name="deviceType6" class="form-control" id="deviceType6">
+					<option value="" selected="selected">Select type</option>
+				</select>
+				<br>
+				<select name="deviceName6" class="form-control" id="deviceName6">
+					<option value="" selected="selected">Select device</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="platformVersion6">Platform Version 6:</label>
+                <select name="platformVersion6" class="form-control" id="platformVersion6">
+					<option value="" selected="selected">Select version</option>
+				</select>
+            </div>
+			<div class="form-group">
+				<label for="app">App Link:</label>
+				<input type="text" class="form-control" name="app" placeholder="Enter app link"> </div>
+			<div class="form-group">
+				<label for="iteration">Iteration:</label>
+				<input type="number" class="form-control" name="iteration" min="1" max="10"> </div>
+			<div class="form-group">
+				<label for="networkProfile">Network Profile:</label>
+				<select name="networkProfile" id="networkProfile" class="form-control">
+					<option value="no-network">no-network</option>
+					<option value="airplane-mode">airplane-mode</option>
+					<option value="2g-gprs-good">2g-gprs-good</option>
+					<option value="2g-gprs-lossy">2g-gprs-lossy</option>
+					<option value="edge-good">edge-good</option>
+					<option value="2gedge-lossy">2gedge-lossy</option>
+					<option value="3g-umts-good">3g-umts-good</option>
+					<option value="3g-umts-lossy">3g-umts-lossy</option>
+					<option value="3.5g-hspa-good">3.5g-hspa-good</option>
+					<option value="3.5g-hspa-lossy">3.5g-hspa-lossy</option>
+					<option value="3.5g-hspa-plus-good">3.5g-hspa-plus-good</option>
+					<option value="3.5g-hspa-plus-lossy">3.5g-hspa-plus-lossy</option>
+					<option value="4g-lte-good">4g-lte-good</option>
+					<option value="4g-lte-high-latency">4g-lte-high-latency</option>
+					<option value="4g-lte-lossy">4g-lte-lossy</option>
+					<option value="4g-lte-advanced-good">4g-lte-advanced-good</option>
+					<option value="4g-lte-advanced-lossy">4g-lte-advanced-lossy</option>
+					<option value="reset">reset</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="type">Type: &nbsp;&nbsp;&nbsp;</label>
+				<input type="radio" name="type" value="cold"> Cold Launch &nbsp;&nbsp;&nbsp;
+				<input type="radio" name="type" value="warm"> Warm Launch </div>
+			<button type="submit" class="btn btn-primary" onClick="loading();">Submit</button>
+			<button type="reset" class="btn btn-default">Clear</button>
+		</form>
+	</div>
+</body>
+</html>
+{% endblock %}

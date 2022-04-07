@@ -1,4 +1,3 @@
-import MySQLdb
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.ui import WebDriverWait
@@ -28,11 +27,6 @@ for i in range(iteration):
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_btn') and (@text='Batalkan')]"))
     )
     btn_cancel_element.click()
-
-    btn_close_element = wait.until(
-        ec.element_to_be_clickable((MobileBy.XPATH, "//android.view.View[@content-desc='light']/android.widget.Image"))
-    )
-    btn_close_element.click()
 
     btn_login_menu_element = wait.until(
         ec.element_to_be_clickable((MobileBy.XPATH, "//*[contains(@resource-id, 'tds_title_bottom_navigation') and ("
@@ -66,18 +60,3 @@ for i in range(iteration):
     for j in log_metrics:
         log_file.write(j + "\n")
     log_file.close()
-
-    db = MySQLdb.connect("localhost", "root", "", "db_automation_test")
-    cursor = db.cursor()
-
-    columns = ', '.join("`" + str(x) + "`" for x in desired_caps.keys())
-    values = ', '.join("'" + str(x) + "'" for x in desired_caps.values())
-    insert_sql = "INSERT INTO %s ( %s ) VALUES ( %s );" % ('device_log', columns, values)
-    cursor.execute(insert_sql)
-    db.commit()
-
-    update_sql = "UPDATE %s SET displayed = '%s', fully_drawn = '%s' ORDER BY id DESC LIMIT 1" % (
-    'device_log', sliced_displayed, sliced_fully_drawn)
-    cursor.execute(update_sql)
-    db.commit()
-    db.close()

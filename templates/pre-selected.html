@@ -1,0 +1,86 @@
+{% extends "header.html" %}
+{% block headinclude %}
+{% endblock %}
+{% block content %}
+<html lang="en">
+<head>
+	<title>Automated Testing Device Log</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wnameth=device-wnameth, initial-scale=1">
+	<script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+	function loading() {
+		$("#loading").show();
+		$("#content").hide();
+	}
+	// ]]>
+	</script>
+	<style>
+	div#loading {
+		display: none;
+		cursor: wait;
+	}
+	</style>
+</head>
+<body>
+	<div id="loading">
+		<center><br><br><br><br><h3>Please wait...</h3><img src="/static/loading.gif"></center>
+	</div>
+	<div class="container" id="content">
+		<h2 style="text-align:center">Automated Testing<br><br></h2>
+		<form action="/pre-selected_testing" method="POST" style="width:80%; padding-left:200px;">
+			<div class="form-group">
+				<label for="build">Build:</label>
+				<input type="text" class="form-control" name="build" placeholder="Enter build">
+            </div>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" name="name" placeholder="Enter name">
+            </div>
+			<div class="form-group">
+				<label for="platformName">Platform Name: &nbsp;&nbsp;&nbsp;</label>
+				<input type="radio" name="platformName" value="android"> Android &nbsp;&nbsp;&nbsp;
+				<input type="radio" name="platformName" value="ios"> iOS
+            </div>
+			<div class="form-group">
+				<label for="app">App Link:</label>
+				<input type="text" class="form-control" name="app" placeholder="Enter app link"> </div>
+			<div class="form-group">
+				<label for="iteration">Iteration:</label>
+				<input type="number" class="form-control" name="iteration" min="1" max="10"> </div>
+			<div class="form-group">
+				<label for="networkProfile">Network Profile:</label>
+				<select name="networkProfile" id="networkProfile" class="form-control">
+					<option value="no-network">no-network</option>
+					<option value="airplane-mode">airplane-mode</option>
+					<option value="2g-gprs-good">2g-gprs-good</option>
+					<option value="2g-gprs-lossy">2g-gprs-lossy</option>
+					<option value="edge-good">edge-good</option>
+					<option value="2gedge-lossy">2gedge-lossy</option>
+					<option value="3g-umts-good">3g-umts-good</option>
+					<option value="3g-umts-lossy">3g-umts-lossy</option>
+					<option value="3.5g-hspa-good">3.5g-hspa-good</option>
+					<option value="3.5g-hspa-lossy">3.5g-hspa-lossy</option>
+					<option value="3.5g-hspa-plus-good">3.5g-hspa-plus-good</option>
+					<option value="3.5g-hspa-plus-lossy">3.5g-hspa-plus-lossy</option>
+					<option value="4g-lte-good">4g-lte-good</option>
+					<option value="4g-lte-high-latency">4g-lte-high-latency</option>
+					<option value="4g-lte-lossy">4g-lte-lossy</option>
+					<option value="4g-lte-advanced-good">4g-lte-advanced-good</option>
+					<option value="4g-lte-advanced-lossy">4g-lte-advanced-lossy</option>
+					<option value="reset">reset</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="type">Type: &nbsp;&nbsp;&nbsp;</label>
+				<input type="radio" name="type" value="cold"> Cold Launch &nbsp;&nbsp;&nbsp;
+				<input type="radio" name="type" value="warm"> Warm Launch </div>
+			<button type="submit" class="btn btn-primary" onClick="loading();">Submit</button>
+			<button type="reset" class="btn btn-default">Clear</button>
+		</form>
+	</div>
+</body>
+</html>
+{% endblock %}

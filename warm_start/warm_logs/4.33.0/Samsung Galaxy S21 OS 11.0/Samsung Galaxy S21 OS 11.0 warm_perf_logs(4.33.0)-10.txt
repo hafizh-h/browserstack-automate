@@ -1,0 +1,4 @@
+04-06 05:27:41.791  1242  1316 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +743ms
+04-06 05:27:53.422  1242  1316 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +804ms
+04-06 05:27:43.384  1242  1316 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +2s568ms
+04-06 05:27:55.293  1242  1316 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +2s686ms
