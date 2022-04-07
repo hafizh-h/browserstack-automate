@@ -148,7 +148,7 @@ def single_testing():
 
                 log_file = open(
                     desired_caps["deviceName"] + " OS " + desired_caps[
-                        "platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
+                        "platformVersion"] + " cold_perf_logs-" + str(
                         i + 1) + ".txt", "w")
                 for j in log_metrics:
                     log_file.write(j + "\n")
@@ -237,7 +237,7 @@ def single_testing():
 
                 log_file = open(
                     desired_caps["deviceName"] + " OS " + desired_caps[
-                        "platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+                        "platformVersion"] + " warm_perf_logs-" + str(
                         i + 1) + ".txt", "w")
                 for j in log_metrics:
                     log_file.write(j + "\n")
@@ -427,7 +427,7 @@ def multi_testing():
 
                     log_file = open(
                         desired_caps[i]["deviceName"] + " OS " + desired_caps[i][
-                            "platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
+                            "platformVersion"] + " cold_perf_logs-" + str(
                             j + 1) + ".txt", "w")
                     for k in log_metrics:
                         log_file.write(k + "\n")
@@ -549,7 +549,7 @@ def multi_testing():
 
                     log_file = open(
                         desired_caps[i]["deviceName"] + " OS " + desired_caps[i][
-                            "platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+                            "platformVersion"] + " warm_perf_logs-" + str(
                             j + 1) + ".txt", "w")
                     for k in log_metrics:
                         log_file.write(k + "\n")
@@ -658,7 +658,7 @@ def preselected_testing():
                 "name": name,
                 "platformName": platformName,
                 "platformVersion": "12.0",
-                "deviceName": "Samsung Galaxy S22",
+                "deviceName": "Samsung Galaxy S22 Plus",
                 "app": app,
                 "networkProfile": networkProfile
             }
@@ -790,7 +790,7 @@ def preselected_testing():
 
                     log_file = open(
                         desired_caps[i]["deviceName"] + " OS " + desired_caps[i][
-                            "platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
+                            "platformVersion"] + " cold_perf_logs-" + str(
                             j + 1) + ".txt", "w")
                     for k in log_metrics:
                         log_file.write(k + "\n")
@@ -912,7 +912,7 @@ def preselected_testing():
 
                     log_file = open(
                         desired_caps[i]["deviceName"] + " OS " + desired_caps[i][
-                            "platformVersion"] + " warm_perf_logs(4.31.2)-" + str(
+                            "platformVersion"] + " warm_perf_logs-" + str(
                             j + 1) + ".txt", "w")
                     for k in log_metrics:
                         log_file.write(k + "\n")

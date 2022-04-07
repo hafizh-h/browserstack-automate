@@ -55,7 +55,7 @@ for i in range(iteration):
     log_metrics = displayed_metrics + fd_metrics
 
     log_file = open(
-        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs-" + str(
             i + 1) + ".txt", "w")
     for j in log_metrics:
         log_file.write(j + "\n")
