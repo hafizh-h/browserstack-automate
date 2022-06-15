@@ -1,0 +1,53 @@
+04-18 10:50:13.009  3706  4384 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10000000 cmp=ComponentInfo{io.appium.settings/io.appium.settings.Settings}} from uid 2000 on display 0
+04-18 10:50:13.045  3706  5422 I ActivityManager: Start proc 30735:io.appium.settings/u0a198 for activity io.appium.settings/.Settings
+04-18 10:50:13.080  3706  3994 I ActivityManager: DSS on for io.appium.settings and scale is 1.0
+04-18 10:50:13.353  3706  3819 I ActivityManager: Displayed io.appium.settings/.Settings: +323ms
+04-18 10:50:13.790  3706  4988 I ActivityManager: Force stopping com.tiket.gits appid=10204 user=0: from pid 30804
+04-18 10:50:14.313  3706  5211 I ActivityManager: Force stopping com.tiket.gits appid=10204 user=0: clear data
+04-18 10:50:14.321  3706  3805 I ActivityManager: Force stopping com.tiket.gits appid=10204 user=-1: clearApplicationUserData
+04-18 10:50:14.441  3706 27171 I ActivityManager: Start proc 31008:com.android.chrome/u0a147 for broadcast com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+04-18 10:50:14.460  3706  4426 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+04-18 10:50:14.663  3706 19321 I ActivityManager: Start proc 31076:com.android.documentsui/u0a16 for broadcast com.android.documentsui/.PackageReceiver
+04-18 10:50:14.699  3706  7981 I ActivityManager: DSS on for com.android.documentsui and scale is 1.0
+04-18 10:50:14.809  3706  3805 I ActivityManager: KPU : put [com.wssyncmldm] : 12060 K
+04-18 10:50:14.817  3706  3805 I ActivityManager: Killing 28013:com.wssyncmldm/1000 (adj 906): DHA:empty #33
+04-18 10:50:14.859  3706 28210 I ActivityManager: Start proc 31127:com.samsung.android.calendar/u0a152 for broadcast com.samsung.android.calendar/com.android.calendar.common.receiver.WeatherActionReceiver
+04-18 10:50:14.916  3706  5209 I ActivityManager: DSS on for com.samsung.android.calendar and scale is 1.0
+04-18 10:50:14.984  3706  5143 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10200 user=0: from pid 31009
+04-18 10:50:15.097  3706  4041 I ActivityManager: Start proc 31183:com.samsung.android.communicationservice/5002 for broadcast com.samsung.android.communicationservice/.preference.SettingChangeReceiver
+04-18 10:50:15.105  3706  4041 I ActivityManager: KPU : put [com.samsung.android.scloud:contentsync] : 12483 K
+04-18 10:50:15.106  3706  4041 I ActivityManager: Killing 27172:com.samsung.android.scloud:contentsync/5009 (adj 906): DHA:empty #33
+04-18 10:50:15.181  3706 15824 I ActivityManager: DSS on for com.samsung.android.communicationservice and scale is 1.0
+04-18 10:50:15.320  3706  6993 I ActivityManager: Start proc 31213:com.samsung.android.coreapps/5011 for content provider com.samsung.android.coreapps/.easysignup.db.EasySignUpProviderPublic
+04-18 10:50:15.362  3706 10402 I ActivityManager: DSS on for com.samsung.android.coreapps and scale is 1.0
+04-18 10:50:15.611  3706  4362 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10199 user=0: start instr
+04-18 10:50:15.636  3706  4362 I ActivityManager: Start proc 31267:io.appium.uiautomator2.server/u0a199 for added application io.appium.uiautomator2.server
+04-18 10:50:15.710  3706  4425 I ActivityManager: DSS on for io.appium.uiautomator2.server and scale is 1.0
+04-18 10:50:15.747  3706  5211 I ActivityManager: KPU : put [com.samsung.android.app.aodservice:settingui] : 8114 K
+04-18 10:50:15.747  3706  5211 I ActivityManager: Killing 28337:com.samsung.android.app.aodservice:settingui/u0a7 (adj 906): DHA:empty #33
+04-18 10:50:15.827  3706  5176 I ActivityManager: Start proc 31292:com.samsung.android.weather/u0a175 for broadcast com.samsung.android.weather/.app.common.receiver.WeatherAppReceiver
+04-18 10:50:15.885  3706  4988 I ActivityManager: DSS on for com.samsung.android.weather and scale is 1.0
+04-18 10:50:16.477  3706  4988 I ActivityManager: Start proc 31377:com.samsung.cmh:CMH/5004 for broadcast com.samsung.cmh/.core.ClearDataReceiver
+04-18 10:50:16.492  3706  4988 I ActivityManager: KPU : put [com.samsung.android.smartmirroring] : 5258 K
+04-18 10:50:16.492  3706  4988 I ActivityManager: Killing 28343:com.samsung.android.smartmirroring/1000 (adj 906): DHA:empty #33
+04-18 10:50:16.543  3706  4394 I ActivityManager: DSS on for com.samsung.cmh and scale is 1.0
+04-18 10:50:16.655  3706  5212 I ActivityManager: Start proc 31410:com.samsung.storyservice/5004 for broadcast com.samsung.storyservice/.framework.StaticBroadcastReceiver
+04-18 10:50:16.675  3706  5212 I ActivityManager: KPU : put [com.samsung.android.oneconnect] : 20303 K
+04-18 10:50:16.675  3706  5212 I ActivityManager: Killing 28370:com.samsung.android.oneconnect/u0a165 (adj 906): DHA:empty #33
+04-18 10:50:16.729  3706  4394 I ActivityManager: DSS on for com.samsung.storyservice and scale is 1.0
+04-18 10:50:16.845  3706  5209 I ActivityManager: KPU : put [com.android.settings:QuickSettingsTile] : 20036 K
+04-18 10:50:16.845  3706  5209 I ActivityManager: Killing 28289:com.android.settings:QuickSettingsTile/1000 (adj 906): DHA:empty #33
+04-18 10:50:17.325  3706  7981 I ActivityManager: Start proc 31467:com.samsung.dcmservice/5004 for service com.samsung.dcmservice/.DCMService
+04-18 10:50:17.411  3706  4426 I ActivityManager: DSS on for com.samsung.dcmservice and scale is 1.0
+04-18 10:50:17.485  3706  4041 I ActivityManager: KPU : put [com.samsung.android.mdm] : 4064 K
+04-18 10:50:17.485  3706  4041 I ActivityManager: Killing 29176:com.samsung.android.mdm/u0a131 (adj 906): DHA:empty #33
+04-18 10:50:18.919  3706  4362 I ActivityManager: Force stopping com.tiket.gits appid=10204 user=0: from pid 31590
+04-18 10:50:19.182  3706 27171 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000 on display 0
+04-18 10:50:19.248  3706  6993 I ActivityManager: Start proc 31700:com.tiket.gits/u0a204 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-18 10:50:19.271  3706  3977 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+04-18 10:50:20.444  3706  3819 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s224ms
+04-18 10:50:20.613  3706  5422 I ActivityManager: KPU : put [com.samsung.android.lool] : 9343 K
+04-18 10:50:20.613  3706  5422 I ActivityManager: Killing 25544:com.samsung.android.lool/1000 (adj 906): DHA:empty #33
+04-18 10:50:23.100  3706 27171 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +3s880ms
+04-18 10:50:24.668  3706  5211 I ActivityManager: Start proc 32503:com.android.chrome:webview_service/u0a147 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+04-18 10:50:24.726  3706  4041 I ActivityManager: DSS on for com.android.chrome and scale is 1.0

@@ -1,0 +1,40 @@
+04-25 03:55:59.312  3416  3487 I ActivityManager: Killing 24216:com.samsung.android.providers.context/u0a7 (adj -12): bg anr
+04-25 03:55:59.362  3416  3437 I ActivityManager: Process com.samsung.android.providers.context (pid 24216)(adj -12) has died(165,1873)
+04-25 03:55:59.472  3416  3437 I ActivityManager: Start proc 25572:com.samsung.android.providers.context/u0a7 for restart com.samsung.android.providers.context
+04-25 03:55:59.692  3416  3487 I ActivityManager: Start proc 25638:com.UCMobile.intl/u0a171 for broadcast-3 com.UCMobile.intl/com.uc.base.push.agoo.TaobaoRebindReceiver
+04-25 03:56:01.162  3416  3487 I ActivityManager: Start proc 26021:com.sec.android.soagent/1000 for broadcast-5 com.sec.android.soagent/.NetworkReceiver
+04-25 03:56:01.282  3416  4510 I ActivityManager: Start proc 26055:com.policydm/1000 for broadcast-5 com.policydm/.XDMBroadcastReceiver
+04-25 03:56:01.292  3416  4510 I ActivityManager: Killing 19109:org.mozilla.firefox/u0a168 (adj 15): DHA:empty #33
+04-25 03:56:01.452  3416  4508 I ActivityManager: Start proc 26092:com.samsung.aasaservice/1000 for service com.samsung.aasaservice/.AASAService
+04-25 03:56:01.502  3416  4708 I ActivityManager: Killing 18538:com.samsung.android.securitylogagent/1000 (adj 15): DHA:empty #33
+04-25 03:56:01.512  3416  4009 I ActivityManager: Killing 19547:com.google.android.youtube/u0a155 (adj 15): DHA:empty #33
+04-25 03:56:02.242  3416  4333 I ActivityManager: Start proc 26289:io.appium.settings/u0a295 for activity io.appium.settings/.Settings
+04-25 03:56:02.602  3416  3514 I ActivityManager: Displayed io.appium.settings/.Settings: +374ms
+04-25 03:56:03.712  3416  3514 I ActivityManager: Displayed com.sec.android.app.launcher/.activities.LauncherActivity: +166ms
+04-25 03:56:03.812  3416  4508 I ActivityManager: Force stopping com.tiket.gits appid=10315 user=0: from pid 26522
+04-25 03:56:04.062  3416  4333 I ActivityManager: Start proc 26679:com.osp.app.signin/u0a40 for broadcast-5 com.osp.app.signin/.OspReceiver
+04-25 03:56:04.102  3416  3487 I ActivityManager: Killing 18195:com.samsung.android.SettingsReceiver/1000 (adj 15): DHA:empty #33
+04-25 03:56:04.272  3416  4436 I ActivityManager: Killing 23697:com.google.android.googlequicksearchbox/u0a67 (adj 15): DHA:empty #33
+04-25 03:56:04.512  3416  4508 I ActivityManager: Force stopping com.tiket.gits appid=10315 user=0: clear data
+04-25 03:56:04.512  3416  4508 I ActivityManager: Force stopping com.tiket.gits appid=10315 user=0: clear data
+04-25 03:56:04.912  3416  3487 I ActivityManager: Start proc 26910:com.wssyncmldm/1000 for broadcast-5 com.wssyncmldm/com.samsung.android.app.fotaclient.NetworkReceiver
+04-25 03:56:05.052  3416  4333 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10297 user=0: from pid 26875
+04-25 03:56:05.162  3416  3436 I ActivityManager: Killing 9524:com.google.process.gapps/u0a18 (adj 15): DHA:empty #33
+04-25 03:56:05.792  3416  4508 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10296 user=0: start instr
+04-25 03:56:05.832  3416  4508 I ActivityManager: Start proc 27097:io.appium.uiautomator2.server/u0a296 for added application io.appium.uiautomator2.server
+04-25 03:56:06.972  3416  3487 I ActivityManager: Start proc 27279:com.sec.spp.push/u0a38 for broadcast-5 com.sec.spp.push/.monitor.SystemStateMoniter
+04-25 03:56:07.092  3416  3866 I ActivityManager: Killing 19534:com.sec.android.provider.badge/u0a3 (adj 15): DHA:empty #33
+04-25 03:56:07.462  3416  3487 I ActivityManager: Start proc 27355:com.samsung.android.SettingsReceiver/1000 for broadcast-5 com.samsung.android.SettingsReceiver/.SettingsIntentReceiver
+04-25 03:56:07.612  3416  5281 I ActivityManager: Start proc 27384:com.samsung.android.themestore/u0a63 for broadcast-5 com.samsung.android.themestore/.manager.autoSelfUpgradeService.AutoSelfUpgradeReceiver
+04-25 03:56:07.622  3416  5281 I ActivityManager: Killing 23958:com.android.vending:background/u0a31 (adj 15): DHA:empty #33
+04-25 03:56:07.762  3416  4123 I ActivityManager: Killing 9119:com.samsung.android.sm/1000 (adj 15): DHA:empty #33
+04-25 03:56:08.912  3416  3437 I ActivityManager: Force stopping com.tiket.gits appid=10315 user=0: from pid 27534
+04-25 03:56:09.242  3416  4335 I ActivityManager: Start proc 27693:com.tiket.gits/u0a315 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-25 03:56:09.632  3416  5281 I ActivityManager: Start proc 27804:com.google.process.gapps/u0a18 for content provider com.google.android.gsf/.gservices.GservicesProvider
+04-25 03:56:10.162  3416  4436 I ActivityManager: Killing 24567:com.samsung.android.app.galaxylabs/u0a14 (adj 15): DHA:empty #33
+04-25 03:56:10.682  3416  3514 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s451ms
+04-25 03:56:13.262  3416  3437 I ActivityManager: Start proc 28397:com.google.android.webview:webview_service/u0a154 for service com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer
+04-25 03:56:14.042  3416  3436 I ActivityManager: Killing 24580:com.google.android.partnersetup/u0a22 (adj 15): DHA:empty #33
+04-25 03:56:14.402  3416  3437 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +5s165ms
+04-25 03:56:19.882  3416  3416 I ActivityManager: Start proc 29456:org.mozilla.firefox/u0a168 for service org.mozilla.firefox/androidx.work.impl.background.systemjob.SystemJobService
+04-25 03:56:19.952  3416  3487 I ActivityManager: Start proc 29477:com.samsung.android.coreapps/5011 for broadcast-5 com.samsung.android.coreapps/.easysignup.receiver.NetworkStateListener

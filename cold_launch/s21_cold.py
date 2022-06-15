@@ -19,21 +19,31 @@ App for v4.32.0 Release = v4.32.0-RC119-HEAD-090310-release.apk
 App url: bs://743efc2e4e1a72a41bfd1eb69b50b59321063aba
 App for v4.32.1 FD Fix Release = v4.32.1-FullyDrawnFix-release.apk
 App url: bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24
+App for v4.32.1 Merged = v4.32.1-RC157-HEAD-060409-release.apk
+App url: bs://c73b4f2017a6cef4bb572f782e4e2238ad5e9818
+App for v4.33.0 ApptimizeRemoved = v4.33.0-ApptimizeRemoved-release.apk
+App url: bs://414565660039acb8e85b43f0d599a2b12efbcde0
+App for v4.33.0-BaseBuild = v4.33.0-develop-180404-release.apk
+App url: bs://d277e982769a45f503678ee89aa744d38b217596
+App for v4.33.0-FeatureBuild = v4.33.0-TAP-1162-180405-release.apk
+App url: bs://f7781a9817de97e7716577272f691b83a8499f3f
+App for v4.34.0 = v4.34.0-RC178-HEAD-250402-release.apk
+App url: bs://da65681afd9b21ccd306c410394153dd7be7fcb9
 '''
 userName = "hafizh_783gSd"
 accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.32.1 FD Fix",
+    "build": "Launch Time 4.34.0",
     "name": "Samsung Galaxy S21 Cold",
     "platformName": "android",
     "platformVersion": "11.0",
     "deviceName": "Samsung Galaxy S21",
-    "app": "bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24"
+    "app": "bs://da65681afd9b21ccd306c410394153dd7be7fcb9"
 }
 
-iteration = 2
+iteration = 10
 for i in range(iteration):
     driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
                               desired_caps)
@@ -75,7 +85,7 @@ for i in range(iteration):
     sliced_fully_drawn = conv_fully_drawn[54:]
 
     perf_file = open(
-        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(i+1) + ".txt", "w")
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.34.0)-" + str(i+1) + ".txt", "w")
     for j in perf_metrics:
         perf_file.write(j + "\n")
     perf_file.close()

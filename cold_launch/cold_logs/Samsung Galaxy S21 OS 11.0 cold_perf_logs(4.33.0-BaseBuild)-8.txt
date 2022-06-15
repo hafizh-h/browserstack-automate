@@ -1,0 +1,3 @@
+04-18 10:22:59.145  1248  2294 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tiket.gits/.v2splash.SplashV2Activity} from uid 2000
+04-18 10:22:59.582  1248  1328 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +373ms
+04-18 10:23:02.011  1248  1328 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +2s459ms

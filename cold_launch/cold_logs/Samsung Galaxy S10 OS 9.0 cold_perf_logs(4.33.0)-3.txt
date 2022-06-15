@@ -1,0 +1,57 @@
+04-06 02:56:10.463  5746 20240 I ActivityManager: Killing 12778:com.microsoft.appmanager/u0a117 (adj 906): empty #31
+04-06 02:56:10.488  5746 20425 I ActivityManager: Killing 13085:com.samsung.android.ipsgeofence/5017 (adj 906): empty #31
+04-06 02:56:10.520  5746  5779 I ActivityManager: Start proc 26789:com.sec.android.widgetapp.samsungapps/u0a38 for broadcast com.sec.android.widgetapp.samsungapps/.PackageChangeReceiver
+04-06 02:56:10.558  5746 20425 I ActivityManager: DSS on for com.sec.android.widgetapp.samsungapps and scale is 1.0
+04-06 02:56:10.623  5746 19415 I ActivityManager: Killing 13146:com.samsung.mlp/5004 (adj 906): empty #31
+04-06 02:56:10.657  5746  5779 I ActivityManager: Start proc 26821:ACMS.Process/1000 for broadcast com.samsung.android.app.mirrorlink/com.samsung.android.mirrorlink.acms.receivers.AcmsPackageEventListener
+04-06 02:56:10.696  5746 19415 I ActivityManager: DSS on for com.samsung.android.app.mirrorlink and scale is 1.0
+04-06 02:56:10.809  5746 20239 I ActivityManager: Killing 12808:com.samsung.storyservice/5004 (adj 906): empty #31
+04-06 02:56:11.069  5746  5779 I ActivityManager: Start proc 26908:com.samsung.android.app.telephonyui/1001 for broadcast com.samsung.android.app.telephonyui/.callsettings.ui.accessibility.AccessibilityReceiver
+04-06 02:56:11.117  5746  5779 I ActivityManager: Start proc 26914:com.browserstack.watcher/u0a207 for service com.browserstack.watcher/.services.Watcher
+04-06 02:56:11.132  5746 20004 I ActivityManager: DSS on for com.samsung.android.app.telephonyui and scale is 1.0
+04-06 02:56:11.192  5746 19415 I ActivityManager: DSS on for com.browserstack.watcher and scale is 1.0
+04-06 02:56:11.326  5746 20240 I ActivityManager: Killing 23080:com.android.keychain/1000 (adj 906): empty #31
+04-06 02:56:11.891  5746  5779 I ActivityManager: Start proc 27062:com.samsung.storyservice/5004 for service com.samsung.storyservice/.StoryService
+04-06 02:56:11.921  5746 20893 I ActivityManager: DSS on for com.samsung.storyservice and scale is 1.0
+04-06 02:56:12.057  5746 19415 I ActivityManager: Killing 25655:com.samsung.android.dynamiclock/u0a29 (adj 906): empty #31
+04-06 02:56:13.269  5746 20004 I ActivityManager: Force stopping com.android.chrome appid=10196 user=-1: set debug app
+04-06 02:56:15.048  5746  5779 I ActivityManager: Start proc 27506:com.sec.android.provider.badge/u0a13 for broadcast com.sec.android.provider.badge/.BadgeCountReceiver
+04-06 02:56:15.092  5746 20893 I ActivityManager: DSS on for com.sec.android.provider.badge and scale is 1.0
+04-06 02:56:15.176  5746 20893 I ActivityManager: Killing 23655:com.sec.android.daemonapp/u0a138 (adj 906): empty #31
+04-06 02:56:15.225  5746 20893 I ActivityManager: Force stopping com.tiket.gits appid=10259 user=0: from pid 27550 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+04-06 02:56:15.300  5746 21070 I ActivityManager: Force stopping com.tiket.gits appid=10259 user=0: clear data
+04-06 02:56:15.311  5746  5777 I ActivityManager: Force stopping com.tiket.gits appid=10259 user=-1: clearApplicationUserData
+04-06 02:56:15.416  5746  5779 I ActivityManager: Start proc 27600:com.android.chrome/u0a196 for broadcast com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+04-06 02:56:15.467  5746 20893 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+04-06 02:56:15.514  5746 21070 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10258 user=0: from pid 27620 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+04-06 02:56:15.717  5746  5779 I ActivityManager: Start proc 27672:com.android.documentsui/u0a26 for broadcast com.android.documentsui/.PackageReceiver
+04-06 02:56:15.761  5746 21070 I ActivityManager: DSS on for com.android.documentsui and scale is 1.0
+04-06 02:56:15.895  5746 21070 I ActivityManager: Killing 13494:com.google.process.gapps/u0a43 (adj 906): empty #31
+04-06 02:56:15.953  5746  5779 I ActivityManager: Start proc 27769:com.microsoft.appmanager/u0a117 for broadcast com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver
+04-06 02:56:15.964  5746 20425 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10257 user=0: start instr
+04-06 02:56:15.989  5746  5779 I ActivityManager: Start proc 27787:io.appium.uiautomator2.server/u0a257 for added application io.appium.uiautomator2.server
+04-06 02:56:15.991  5746  6309 I ActivityManager: DSS on for com.microsoft.appmanager and scale is 1.0
+04-06 02:56:16.044  5746 20449 I ActivityManager: DSS on for io.appium.uiautomator2.server and scale is 1.0
+04-06 02:56:16.093  5746  5779 I ActivityManager: Start proc 27821:com.samsung.android.net.wifi.wifiguider/u0a136 for service com.samsung.android.net.wifi.wifiguider/.WifiGuiderService
+04-06 02:56:16.149  5746  6309 I ActivityManager: DSS on for com.samsung.android.net.wifi.wifiguider and scale is 1.0
+04-06 02:56:16.485  5746  5779 I ActivityManager: Start proc 27915:com.samsung.android.messaging/u0a83 for content provider com.samsung.android.messaging/.service.preference.PreferenceProvider
+04-06 02:56:16.527  5746 20449 I ActivityManager: DSS on for com.samsung.android.messaging and scale is 1.0
+04-06 02:56:16.908  5746 21070 I ActivityManager: Killing 25429:com.samsung.android.app.aodservice:provider/u0a9 (adj 906): empty #31
+04-06 02:56:16.918  5746 21070 I ActivityManager: Killing 26061:com.android.providers.calendar/u0a76 (adj 906): empty #31
+04-06 02:56:16.955  5746  5779 I ActivityManager: Start proc 28022:com.samsung.android.ipsgeofence/5017 for broadcast com.samsung.android.ipsgeofence/.task.receivers.ClientDataClearedEventReceiver
+04-06 02:56:17.013  5746 21070 I ActivityManager: DSS on for com.samsung.android.ipsgeofence and scale is 1.0
+04-06 02:56:17.236  5746 20449 I ActivityManager: Killing 23009:com.samsung.android.dqagent/1000 (adj 906): empty #31
+04-06 02:56:17.268  5746  5779 I ActivityManager: Start proc 28084:com.samsung.mlp/5004 for broadcast com.samsung.mlp/.platform.framework.LPBroadcastListener
+04-06 02:56:17.320  5746 20449 I ActivityManager: DSS on for com.samsung.mlp and scale is 1.0
+04-06 02:56:17.398  5746 20446 I ActivityManager: Killing 314:com.samsung.android.lool/1000 (adj 906): empty #31
+04-06 02:56:17.419  5746  5779 I ActivityManager: Start proc 28121:com.sec.android.diagmonagent/1000 for broadcast com.sec.android.diagmonagent/.sa.receiver.CFLogReceiver
+04-06 02:56:17.459  5746 20446 I ActivityManager: DSS on for com.sec.android.diagmonagent and scale is 1.0
+04-06 02:56:17.922  5746  6309 I ActivityManager: Killing 25453:com.samsung.android.smartmirroring/u0a133 (adj 906): empty #31
+04-06 02:56:18.948  5746 20447 I ActivityManager: Force stopping com.tiket.gits appid=10259 user=0: from pid 28326 caller com.android.server.am.ActivityManagerShellCommand.runStartActivity:412
+04-06 02:56:19.218  5746 20447 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000
+04-06 02:56:19.239  5746 20447 I ActivityManager: [IOP] sourceDir : /data/app/com.tiket.gits-08_8KCXNGxtZG5vNIaOt4w== in ActivityStacksupervisor
+04-06 02:56:19.309  5746  5779 I ActivityManager: Start proc 28347:com.tiket.gits/u0a259 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-06 02:56:19.346  5746 20448 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+04-06 02:56:20.637  5746  5787 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s343ms (total +1m57s100ms)
+04-06 02:56:21.511  5746 20447 I ActivityManager: Process ACMS.Process (pid 26821) has died: fore SVC (160,4272)
+04-06 02:56:24.058  5746 20409 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s774ms (total +2m0s531ms)

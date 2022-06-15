@@ -1,0 +1,29 @@
+04-11 10:25:31.012  5753  5784 I ActivityManager: Start proc 20024:com.samsung.android.mdx/u0a59 for content provider com.samsung.android.mdx/.windowslink.tileservice.StateContentProvider
+04-11 10:25:31.031  5753  6324 I ActivityManager: DSS on for com.samsung.android.mdx and scale is 1.0
+04-11 10:25:31.571  5753  5784 I ActivityManager: Start proc 20243:com.samsung.android.messaging/u0a84 for content provider com.samsung.android.messaging/.service.preference.PreferenceProvider
+04-11 10:25:31.587  5753 19129 I ActivityManager: DSS on for com.samsung.android.messaging and scale is 1.0
+04-11 10:25:31.924  5753 19268 I ActivityManager: Killing 12297:com.samsung.android.app.aodservice/u0a9 (adj 906): empty #31
+04-11 10:25:31.925  5753 19268 I ActivityManager: Killing 11182:com.android.nfc:QuickTile/1027 (adj 906): empty #32
+04-11 10:25:31.925  5753 19268 I ActivityManager: Killing 10094:com.samsung.knox.securefolder/u0a92 (adj 906): empty #33
+04-11 10:25:31.942  5753  5784 I ActivityManager: Start proc 20363:com.samsung.android.calendar/u0a133 for broadcast com.samsung.android.calendar/com.samsung.android.app.calendar.model.settings.receiver.UpdateSubscriptionReceiver
+04-11 10:25:31.952  5753  6324 I ActivityManager: DSS on for com.samsung.android.calendar and scale is 1.0
+04-11 10:25:32.131  5753 20929 I ActivityManager: Killing 20052:com.samsung.ipservice/5004 (adj 906): empty #31
+04-11 10:25:32.142  5753  5784 I ActivityManager: Start proc 20411:com.samsung.android.ipsgeofence/5017 for broadcast com.samsung.android.ipsgeofence/.task.receivers.ClientDataClearedEventReceiver
+04-11 10:25:32.159  5753 20929 I ActivityManager: DSS on for com.samsung.android.ipsgeofence and scale is 1.0
+04-11 10:25:32.362  5753 19129 I ActivityManager: Killing 14383:com.android.settings:QuickSettingsTile/1000 (adj 906): empty #31
+04-11 10:25:32.710  5753 19268 I ActivityManager: Force stopping com.tiket.gits appid=10270 user=0: from pid 20557 caller com.android.server.am.ActivityManagerShellCommand.runStartActivity:412
+04-11 10:25:32.965  5753 19268 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000
+04-11 10:25:32.981  5753 19268 I ActivityManager: [IOP] sourceDir : /data/app/com.tiket.gits-s6xE0A0er8107etgXwNSmg== in ActivityStacksupervisor
+04-11 10:25:33.021  5753  5784 I ActivityManager: Start proc 20600:com.tiket.gits/u0a270 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-11 10:25:33.034  5753 20270 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+04-11 10:25:33.385  5753  5784 I ActivityManager: Start proc 20697:com.samsung.ipservice/5004 for service com.samsung.ipservice/.IPService
+04-11 10:25:33.409  5753 20931 I ActivityManager: DSS on for com.samsung.ipservice and scale is 1.0
+04-11 10:25:33.494  5753 20915 I ActivityManager: Killing 17037:com.sec.android.app.soundalive/u0a99 (adj 906): empty #31
+04-11 10:25:33.868  5753  5792 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +860ms (total +2h49m54s784ms)
+04-11 10:25:35.980  5753 20915 I ActivityManager: Process ACMS.Process (pid 18744) has died: fore SVC (273,4250)
+04-11 10:25:36.655  5753 20941 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +3s653ms (total +2h49m57s577ms)
+04-11 10:25:37.960  5753  5784 I ActivityManager: Start proc 21407:com.android.chrome:webview_service/u0a197 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+04-11 10:25:37.961  5753  5784 I ActivityManager: SA, print process name forked by webview_zygote : com.android.chrome:sandboxed_process0
+04-11 10:25:37.988  5753  5784 I ActivityManager: Start proc 21424:com.android.chrome:sandboxed_process0/u0i150 for webview_service com.tiket.gits/org.chromium.content.app.SandboxedProcessService0
+04-11 10:25:37.996  5753 20915 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+04-11 10:25:38.027  5753 20425 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0

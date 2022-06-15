@@ -1,0 +1,31 @@
+04-18 11:28:13.869  3399  3494 I ActivityManager: Killing 26253:com.samsung.android.providers.context/u0a7 (adj -12): bg anr
+04-18 11:28:13.929  3399  4415 I ActivityManager: Process com.samsung.android.providers.context (pid 26253)(adj -12) has died(55,1938)
+04-18 11:28:14.039  3399  4415 I ActivityManager: Start proc 27516:com.samsung.android.providers.context/u0a7 for restart com.samsung.android.providers.context
+04-18 11:28:14.139  3399  3494 I ActivityManager: Start proc 27555:com.samsung.dcmservice/5004 for service com.samsung.dcmservice/.DCMService
+04-18 11:28:16.419  3399  4415 I ActivityManager: Force stopping com.tiket.gits appid=10751 user=0: from pid 27931
+04-18 11:28:17.049  3399  4401 I ActivityManager: Force stopping com.tiket.gits appid=10751 user=0: clear data
+04-18 11:28:17.059  3399  4401 I ActivityManager: Force stopping com.tiket.gits appid=10751 user=0: clear data
+04-18 11:28:17.559  3399  4400 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10738 user=0: from pid 28242
+04-18 11:28:18.299  3399  3444 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10737 user=0: start instr
+04-18 11:28:18.329  3399  3444 I ActivityManager: Start proc 28494:io.appium.uiautomator2.server/u0a737 for added application io.appium.uiautomator2.server
+04-18 11:28:18.409  3399  4077 I ActivityManager: Killing 7021:com.samsung.ipservice/5004 (adj 15): DHA:empty #33
+04-18 11:28:18.689  3399  3494 I ActivityManager: Start proc 28569:com.UCMobile.intl/u0a171 for broadcast-3 com.UCMobile.intl/com.uc.base.push.agoo.TaobaoRebindReceiver
+04-18 11:28:19.059  3399  3494 I ActivityManager: Start proc 28695:com.sec.android.soagent/1000 for broadcast-5 com.sec.android.soagent/.NetworkReceiver
+04-18 11:28:19.129  3399  3879 I ActivityManager: Start proc 28727:com.sec.android.app.shealth/u0a35 for broadcast-3 com.sec.android.app.shealth/com.samsung.android.app.shealth.serviceframework.partner.PluginBroadcastReceiver
+04-18 11:28:19.129  3399  3879 I ActivityManager: Killing 7047:com.samsung.faceservice/5004 (adj 15): DHA:empty #33
+04-18 11:28:19.219  3399  4314 I ActivityManager: Start proc 28749:com.policydm/1000 for broadcast-5 com.policydm/.XDMBroadcastReceiver
+04-18 11:28:19.229  3399  4314 I ActivityManager: Killing 19423:com.samsung.storyservice/5004 (adj 15): DHA:empty #33
+04-18 11:28:19.399  3399  4313 I ActivityManager: Killing 19188:com.samsung.cmh:CMH/5004 (adj 15): DHA:empty #33
+04-18 11:28:19.519  3399  4401 I ActivityManager: Start proc 28830:com.samsung.aasaservice/1000 for service com.samsung.aasaservice/.AASAService
+04-18 11:28:19.579  3399  3445 I ActivityManager: Killing 23334:com.google.android.youtube/u0a155 (adj 15): DHA:empty #33
+04-18 11:28:19.589  3399  4314 I ActivityManager: Killing 19628:com.samsung.android.SettingsReceiver/1000 (adj 15): DHA:empty #33
+04-18 11:28:21.559  3399  4304 I ActivityManager: Force stopping com.tiket.gits appid=10751 user=0: from pid 29043
+04-18 11:28:21.899  3399  4395 I ActivityManager: Start proc 29249:com.tiket.gits/u0a751 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-18 11:28:23.519  3399  3522 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s639ms (total +1m16s724ms)
+04-18 11:28:27.149  3399  4304 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +5s270ms (total +1m20s355ms)
+04-18 11:28:28.209  3399  4005 I ActivityManager: Start proc 30441:com.google.android.webview:webview_service/u0a154 for service com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer
+04-18 11:28:29.049  3399  4401 I ActivityManager: Killing 24064:com.samsung.android.securitylogagent/1000 (adj 15): DHA:empty #33
+04-18 11:28:30.399  3399  4305 I ActivityManager: Killing 3434:com.microsoft.office.word/u0a10 (adj 15): DHA:SPC_empty #33
+04-18 11:28:31.479  3399  3494 I ActivityManager: Start proc 30950:com.microsoft.office.word/u0a10 for service com.microsoft.office.word/com.microsoft.office.preinstallservice.PreInstallService
+04-18 11:28:33.079  3399  4400 I ActivityManager: Start proc 31162:com.facebook.katana:optsvc/u0a175 for service com.facebook.katana/com.facebook.common.dextricks.DexOptimization$Service
+04-18 11:28:33.499  3399  4305 I ActivityManager: Killing 26459:com.google.android.gms.unstable/u0a18 (adj 15): DHA:empty #33

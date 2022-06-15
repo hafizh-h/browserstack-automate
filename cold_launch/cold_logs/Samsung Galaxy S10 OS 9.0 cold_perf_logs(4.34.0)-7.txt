@@ -1,0 +1,58 @@
+04-25 03:25:33.988  5749  5787 I ActivityManager: Start proc 10033:com.samsung.ipservice/5004 for service com.samsung.ipservice/.IPService
+04-25 03:25:34.007  5749 20885 I ActivityManager: DSS on for com.samsung.ipservice and scale is 1.0
+04-25 03:25:34.083  5749 20885 I ActivityManager: Killing 3466:com.sec.android.daemonapp/u0a140 (adj 906): empty #31
+04-25 03:25:34.815  5749  5787 I ActivityManager: Start proc 10084:com.browserstack.watcher/u0a208 for service com.browserstack.watcher/.services.Watcher
+04-25 03:25:34.837  5749  5787 I ActivityManager: Start proc 10112:com.samsung.android.app.telephonyui/1001 for broadcast com.samsung.android.app.telephonyui/.callsettings.ui.accessibility.AccessibilityReceiver
+04-25 03:25:34.841  5749 20533 I ActivityManager: DSS on for com.browserstack.watcher and scale is 1.0
+04-25 03:25:34.872  5749  5787 I ActivityManager: Start proc 10123:com.linkedin.android/u0a60 for service com.linkedin.android/androidx.work.impl.background.systemjob.SystemJobService
+04-25 03:25:34.874  5749 20612 I ActivityManager: DSS on for com.samsung.android.app.telephonyui and scale is 1.0
+04-25 03:25:34.883  5749  6321 I ActivityManager: DSS on for com.linkedin.android and scale is 1.0
+04-25 03:25:36.106  5749 19313 I ActivityManager: Killing 4971:com.samsung.android.app.aodservice:provider/u0a9 (adj 906): empty #31
+04-25 03:25:36.118  5749  6321 I ActivityManager: Killing 2411:com.samsung.android.calendar/u0a133 (adj 906): empty #31
+04-25 03:25:36.782  5749 21011 I ActivityManager: Force stopping com.android.chrome appid=10197 user=-1: set debug app
+04-25 03:25:36.783  5749 21011 I ActivityManager: Killing 8888:com.android.chrome:webview_service/u0a197 (adj 904): stop com.android.chrome,set debug app
+04-25 03:25:36.785  5749 21011 I ActivityManager: Killing 5577:com.google.android.googlequicksearchbox:search/u0a117 (adj 0): stop com.android.chrome,set debug app
+04-25 03:25:38.621  5749  5764 I ActivityManager: Force stopping com.tiket.gits appid=10232 user=0: from pid 10760 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+04-25 03:25:38.665  5749  5787 I ActivityManager: Start proc 10778:com.sec.android.diagmonagent/1000 for broadcast com.sec.android.diagmonagent/.sa.receiver.CFLogReceiver
+04-25 03:25:38.702  5749 21042 I ActivityManager: DSS on for com.sec.android.diagmonagent and scale is 1.0
+04-25 03:25:38.720  5749 21042 I ActivityManager: Force stopping com.tiket.gits appid=10232 user=0: clear data
+04-25 03:25:38.732  5749  5785 I ActivityManager: Force stopping com.tiket.gits appid=10232 user=-1: clearApplicationUserData
+04-25 03:25:38.857  5749  5764 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10231 user=0: from pid 10839 caller com.android.server.am.ActivityManagerShellCommand.runForceStop:967
+04-25 03:25:39.072  5749  5787 I ActivityManager: Start proc 10883:com.android.chrome/u0a197 for broadcast com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver
+04-25 03:25:39.103  5749 20070 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+04-25 03:25:39.167  5749 20070 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10230 user=0: start instr
+04-25 03:25:39.197  5749  5787 I ActivityManager: Start proc 10929:io.appium.uiautomator2.server/u0a230 for added application io.appium.uiautomator2.server
+04-25 03:25:39.253  5749 21038 I ActivityManager: DSS on for io.appium.uiautomator2.server and scale is 1.0
+04-25 03:25:39.314  5749 21038 I ActivityManager: Killing 6042:com.android.providers.calendar/u0a77 (adj 906): empty #31
+04-25 03:25:39.336  5749  5787 I ActivityManager: Start proc 10969:com.android.documentsui/u0a26 for broadcast com.android.documentsui/.PackageReceiver
+04-25 03:25:39.363  5749  5764 I ActivityManager: DSS on for com.android.documentsui and scale is 1.0
+04-25 03:25:39.452  5749 21042 I ActivityManager: Killing 2740:com.samsung.android.net.wifi.wifiguider/u0a138 (adj 906): empty #31
+04-25 03:25:39.484  5749  5787 I ActivityManager: Start proc 11015:com.microsoft.appmanager/u0a119 for broadcast com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver
+04-25 03:25:39.507  5749 21042 I ActivityManager: DSS on for com.microsoft.appmanager and scale is 1.0
+04-25 03:25:39.961  5749  5787 I ActivityManager: Start proc 11172:com.samsung.android.calendar/u0a133 for broadcast com.samsung.android.calendar/com.samsung.android.app.calendar.model.settings.receiver.UpdateSubscriptionReceiver
+04-25 03:25:39.996  5749 21042 I ActivityManager: DSS on for com.samsung.android.calendar and scale is 1.0
+04-25 03:25:40.114  5749 20070 I ActivityManager: Killing 4991:com.samsung.android.lool/1000 (adj 906): empty #31
+04-25 03:25:40.144  5749  5787 I ActivityManager: Start proc 11199:com.samsung.android.ipsgeofence/5017 for broadcast com.samsung.android.ipsgeofence/.task.receivers.ClientDataClearedEventReceiver
+04-25 03:25:40.176  5749 20070 I ActivityManager: DSS on for com.samsung.android.ipsgeofence and scale is 1.0
+04-25 03:25:40.337  5749 21038 I ActivityManager: Killing 5014:com.samsung.android.smartmirroring/u0a135 (adj 906): empty #31
+04-25 03:25:40.388  5749  5787 I ActivityManager: Start proc 11250:com.samsung.mlp/5004 for broadcast com.samsung.mlp/.platform.framework.LPBroadcastListener
+04-25 03:25:40.415  5749 20885 I ActivityManager: DSS on for com.samsung.mlp and scale is 1.0
+04-25 03:25:40.509  5749  5787 I ActivityManager: Start proc 11304:com.samsung.storyservice/5004 for broadcast com.samsung.storyservice/.framework.StaticBroadcastReceiver
+04-25 03:25:40.534  5749 21038 I ActivityManager: DSS on for com.samsung.storyservice and scale is 1.0
+04-25 03:25:40.682  5749 21038 I ActivityManager: Killing 5054:com.samsung.knox.securefolder/u0a92 (adj 906): empty #31
+04-25 03:25:41.149  5749 20378 I ActivityManager: Force stopping com.tiket.gits appid=10232 user=0: from pid 11389 caller com.android.server.am.ActivityManagerShellCommand.runStartActivity:412
+04-25 03:25:41.405  5749 20378 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.tiket.gits/com.tiket.gits.v2splash.SplashV2Activity}} from uid 2000
+04-25 03:25:41.415  5749 20378 I ActivityManager: [IOP] sourceDir : /data/app/com.tiket.gits-eQ8TBnLaKp4hq8gMwjUW5A== in ActivityStacksupervisor
+04-25 03:25:41.446  5749 21038 I ActivityManager: Killing 5061:com.android.nfc:QuickTile/1027 (adj 906): empty #31
+04-25 03:25:41.458  5749  5787 I ActivityManager: Start proc 11426:com.tiket.gits/u0a232 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-25 03:25:41.475  5749 21038 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0
+04-25 03:25:42.238  5749  5795 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +793ms (total +7m29s519ms)
+04-25 03:25:43.214  5749  5787 I ActivityManager: Start proc 11816:com.facebook.katana/u0a151 for content provider com.facebook.katana/.provider.AttributionIdProvider
+04-25 03:25:43.251  5749 20378 I ActivityManager: DSS on for com.facebook.katana and scale is 1.0
+04-25 03:25:44.849  5749 20378 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +3s409ms (total +7m32s135ms)
+04-25 03:25:45.561  5749 20378 I ActivityManager: Process ACMS.Process (pid 10014) has died: fore SVC (292,4329)
+04-25 03:25:46.196  5749  5787 I ActivityManager: Start proc 12175:com.android.chrome:webview_service/u0a197 for service com.android.chrome/org.chromium.android_webview.services.VariationsSeedServer
+04-25 03:25:46.197  5749  5787 I ActivityManager: SA, print process name forked by webview_zygote : com.android.chrome:sandboxed_process0
+04-25 03:25:46.216  5749  5787 I ActivityManager: Start proc 12186:com.android.chrome:sandboxed_process0/u0i65 for webview_service com.tiket.gits/org.chromium.content.app.SandboxedProcessService0
+04-25 03:25:46.254  5749 19220 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+04-25 03:25:46.265  5749 19220 I ActivityManager: DSS on for com.tiket.gits and scale is 1.0

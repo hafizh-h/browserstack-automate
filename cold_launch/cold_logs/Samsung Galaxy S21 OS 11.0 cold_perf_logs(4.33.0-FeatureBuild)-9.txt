@@ -1,0 +1,6 @@
+04-18 10:35:59.672  1213  9330 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=io.appium.settings/.Unlock} from uid 2000
+04-18 10:35:59.723  1213  7257 I ActivityTaskManager: moveTaskToBack: Task{eeb7ff2 #61 visible=false type=standard mode=fullscreen translucent=true A=10299:io.appium.settings U=0 StackId=61 sz=1}
+04-18 10:36:00.120  1213  7257 I ActivityTaskManager: Removing activity ActivityRecord{fb646fd u0 io.appium.settings/.Unlock t61 f}}(activityDestroyed)  from stack callers=com.android.server.wm.ActivityRecord.destroyed:3608 com.android.server.wm.ActivityTaskManagerService.activityDestroyed:2643 android.app.IActivityTaskManager$Stub.onTransact:2224 android.os.Binder.execTransactInternal:1195 android.os.Binder.execTransact:1159
+04-18 10:36:00.975  1213  7253 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tiket.gits/.v2splash.SplashV2Activity} from uid 2000
+04-18 10:36:01.438  1213  1414 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +404ms
+04-18 10:36:03.100  1213  1414 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +2s124ms

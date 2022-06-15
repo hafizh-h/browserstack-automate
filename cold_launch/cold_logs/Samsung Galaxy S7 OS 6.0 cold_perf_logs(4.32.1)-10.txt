@@ -1,0 +1,44 @@
+04-06 21:00:51.140 19807 20093 I ActivityManager: Killing 614:com.samsung.android.providers.context/u0a7 (adj -12): bg anr
+04-06 21:00:51.210 19807 20788 I ActivityManager: Process com.samsung.android.providers.context (pid 614)(adj -12) has died(108,1989)
+04-06 21:00:51.240 19807 20788 I ActivityManager: Start proc 1921:com.samsung.android.providers.context/u0a7 for restart com.samsung.android.providers.context
+04-06 21:00:51.410 19807 20033 I ActivityManager: Start proc 1964:com.sec.android.app.shealth/u0a35 for broadcast-3 com.sec.android.app.shealth/com.samsung.android.app.shealth.serviceframework.partner.PluginBroadcastReceiver
+04-06 21:00:51.710 19807 20093 I ActivityManager: Start proc 2045:com.sec.android.soagent/1000 for broadcast-5 com.sec.android.soagent/.NetworkReceiver
+04-06 21:00:51.880 19807 20033 I ActivityManager: Start proc 2092:com.policydm/1000 for broadcast-5 com.policydm/.XDMBroadcastReceiver
+04-06 21:00:51.890 19807 20033 I ActivityManager: Killing 27928:com.samsung.android.themestore/u0a63 (adj 15): DHA:empty #33
+04-06 21:00:52.110 19807 20813 I ActivityManager: Start proc 2168:com.samsung.aasaservice/1000 for service com.samsung.aasaservice/.AASAService
+04-06 21:00:52.150 19807 21346 I ActivityManager: Killing 27966:com.samsung.android.coreapps/5011 (adj 15): DHA:empty #33
+04-06 21:00:52.160 19807 20516 I ActivityManager: Killing 28023:com.google.android.talk/u0a106 (adj 15): DHA:empty #33
+04-06 21:00:52.590 19807 20788 I ActivityManager: Start proc 2271:com.osp.app.signin/u0a40 for broadcast-5 com.osp.app.signin/.OspReceiver
+04-06 21:00:52.720 19807 21345 I ActivityManager: Killing 28092:com.google.android.apps.photos/u0a122 (adj 15): DHA:empty #33
+04-06 21:00:52.790 19807 21345 I ActivityManager: Start proc 2323:com.wssyncmldm/1000 for broadcast-5 com.wssyncmldm/com.samsung.android.app.fotaclient.NetworkReceiver
+04-06 21:00:52.980 19807 20399 I ActivityManager: Killing 28133:com.sec.enterprise.knox.cloudmdm.smdms/u0a146 (adj 15): DHA:empty #33
+04-06 21:00:53.390 19807 20399 I ActivityManager: Start proc 2467:com.samsung.android.themestore/u0a63 for broadcast-5 com.samsung.android.themestore/.manager.autoSelfUpgradeService.AutoSelfUpgradeReceiver
+04-06 21:00:53.410 19807 20093 I ActivityManager: Waited long enough for: ServiceRecord{76a75eb u0 com.google.android.gms/.statementservice.OperationService}
+04-06 21:00:53.640 19807 20399 I ActivityManager: Killing 15633:com.google.process.gapps/u0a18 (adj 15): DHA:empty #33
+04-06 21:00:53.920 19807 20509 I ActivityManager: Start proc 2567:io.appium.settings/u0a494 for activity io.appium.settings/.Settings
+04-06 21:00:54.320 19807 20120 I ActivityManager: Displayed io.appium.settings/.Settings: +418ms
+04-06 21:00:54.950 19807 20093 I ActivityManager: Start proc 2809:com.samsung.android.coreapps/5011 for broadcast-5 com.samsung.android.coreapps/.easysignup.receiver.NetworkStateListener
+04-06 21:00:55.430 19807 20120 I ActivityManager: Displayed com.sec.android.app.launcher/.activities.LauncherActivity: +214ms
+04-06 21:00:55.510 19807 20860 I ActivityManager: Force stopping com.tiket.gits appid=10498 user=0: from pid 2834
+04-06 21:00:55.660 19807 20399 I ActivityManager: Start proc 2984:com.google.android.talk/u0a106 for broadcast-5 com.google.android.talk/com.google.android.apps.hangouts.service.NetworkStateReceiver
+04-06 21:00:55.660 19807 20399 I ActivityManager: Killing 26800:com.facebook.katana:optsvc/u0a175 (adj 15): DHA:empty #33
+04-06 21:00:55.830 19807 20093 I ActivityManager: Killing 26048:org.mozilla.firefox:tab22/u0a168 (adj 15): DHA:empty #33
+04-06 21:00:55.890 19807 20516 I ActivityManager: Start proc 3137:com.google.process.gapps/u0a18 for content provider com.google.android.gsf/.gservices.GservicesProvider
+04-06 21:00:56.190 19807 20812 I ActivityManager: Force stopping com.tiket.gits appid=10498 user=0: clear data
+04-06 21:00:56.200 19807 20812 I ActivityManager: Force stopping com.tiket.gits appid=10498 user=0: clear data
+04-06 21:00:56.470 19807 20813 I ActivityManager: Killing 25973:org.mozilla.firefox/u0a168 (adj 15): DHA:empty #33
+04-06 21:00:56.640 19807 20790 I ActivityManager: Killing 26876:com.samsung.android.securitylogagent/1000 (adj 15): DHA:empty #33
+04-06 21:00:56.910 19807 20093 I ActivityManager: Start proc 3415:com.google.android.apps.photos/u0a122 for broadcast-5 com.google.android.apps.photos/.actionqueue.SystemReceiver
+04-06 21:00:56.910 19807 20399 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10496 user=0: from pid 3337
+04-06 21:00:57.220 19807 20313 I ActivityManager: Start proc 3470:com.sec.enterprise.knox.cloudmdm.smdms/u0a146 for broadcast-5 com.sec.enterprise.knox.cloudmdm.smdms/.core.BulkEnrollmentInitiator
+04-06 21:00:57.220 19807 20313 I ActivityManager: Killing 20036:com.samsung.android.sm/1000 (adj 15): DHA:empty #33
+04-06 21:00:57.360 19807 20788 I ActivityManager: Killing 954:com.samsung.android.app.galaxylabs/u0a14 (adj 15): DHA:empty #33
+04-06 21:00:57.640 19807 20516 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10495 user=0: start instr
+04-06 21:00:57.680 19807 20516 I ActivityManager: Start proc 3581:io.appium.uiautomator2.server/u0a495 for added application io.appium.uiautomator2.server
+04-06 21:00:59.450 19807 20790 I ActivityManager: Killing 1036:com.samsung.svoice.sync/u0a39 (adj 15): DHA:empty #33
+04-06 21:00:59.450 19807 20790 I ActivityManager: Killing 973:com.google.android.partnersetup/u0a22 (adj 15): DHA:empty #33
+04-06 21:01:00.920 19807 20788 I ActivityManager: Force stopping com.tiket.gits appid=10498 user=0: from pid 3988
+04-06 21:01:01.310 19807 20397 I ActivityManager: Start proc 4179:com.tiket.gits/u0a498 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-06 21:01:02.680 19807 20120 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s396ms
+04-06 21:01:05.450 19807 20033 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s160ms
+04-06 21:01:06.210 19807 20813 I ActivityManager: Start proc 5163:com.google.android.webview:webview_service/u0a154 for service com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer

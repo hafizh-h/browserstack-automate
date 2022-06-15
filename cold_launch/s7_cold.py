@@ -23,15 +23,15 @@ accessKey = "cpKChBFWNYG4qaA4dj1H"
 
 desired_caps = {
     "project": "Core Platform",
-    "build": "Launch Time 4.32.1 FD Fix",
+    "build": "Launch Time 4.34.0",
     "name": "Samsung Galaxy S7 Cold",
     "platformName": "android",
     "platformVersion": "6.0",
     "deviceName": "Samsung Galaxy S7",
-    "app": "bs://36fd95f45c69b0f9056c11d128df44e8c6d36c24"
+    "app": "bs://da65681afd9b21ccd306c410394153dd7be7fcb9"
 }
 
-iteration = 2
+iteration = 1
 for i in range(iteration):
     driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub",
                               desired_caps)
@@ -79,7 +79,7 @@ for i in range(iteration):
     sliced_fully_drawn = conv_fully_drawn[50:]
 
     perf_file = open(
-        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.31.2)-" + str(i+1) + ".txt", "w")
+        desired_caps["deviceName"] + " OS " + desired_caps["platformVersion"] + " cold_perf_logs(4.34.0)-" + str(i+9) + ".txt", "w")
     for j in perf_metrics:
         perf_file.write(j + "\n")
     perf_file.close()

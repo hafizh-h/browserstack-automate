@@ -1,0 +1,49 @@
+04-11 10:29:50.103  3346  3853 I ActivityManager: Start proc 17684:com.samsung.android.app.mirrorlink/1000 for broadcast-3 com.samsung.android.app.mirrorlink/com.samsung.android.mirrorlink.acms.receivers.AcmsPackageEventListener
+04-11 10:29:50.193  3346  3543 I ActivityManager: Start proc 17711:com.sec.android.app.samsungapps/u0a13 for broadcast-3 com.sec.android.app.samsungapps/.receiver.PackageAddedReceiver
+04-11 10:29:50.483  3346  4000 I ActivityManager: Start proc 17773:io.appium.settings/u0a177 for activity io.appium.settings/.Settings
+04-11 10:29:50.763  3346  4321 I ActivityManager: Start proc 17843:com.sec.android.app.sbrowser/u0a127 for broadcast-3 com.sec.android.app.sbrowser/.webcontentsprovider.WebContentsProviderReceiver
+04-11 10:29:51.133  3346  3620 I ActivityManager: Displayed io.appium.settings/.Settings: +667ms
+04-11 10:29:51.313  3346  3542 I ActivityManager: Killing 14950:com.microsoft.office.word/u0a10 (adj 15): DHA:SPC_empty #33
+04-11 10:29:51.333  3346  3542 I ActivityManager: Start proc 17998:com.android.vending/u0a31 for broadcast-3 com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+04-11 10:29:51.383  3346  4321 I ActivityManager: Killing 15016:com.trustonic.tuiservice/1000 (adj 15): DHA:SPC_empty #33
+04-11 10:29:52.013  3346  4886 I ActivityManager: Force stopping com.tiket.gits appid=10184 user=0: from pid 18041
+04-11 10:29:52.113  3346  3620 I ActivityManager: Displayed com.sec.android.app.launcher/.activities.LauncherActivity: +235ms
+04-11 10:29:52.183  3346  4376 I ActivityManager: Start proc 18203:com.facebook.katana/u0a175 for broadcast-3 com.facebook.katana/com.facebook.feed.platformads.AppInstallReceiver
+04-11 10:29:52.183  3346  4376 I ActivityManager: Killing 28454:com.UCMobile.intl:ud/u0a171 (adj 15): DHA:SPC_empty #33
+04-11 10:29:52.283  3346  4886 I ActivityManager: Start proc 18252:com.UCMobile.intl:ud/u0a171 for service com.UCMobile.intl/com.uc.ud.ploys.doubleprocess.DpSenderService
+04-11 10:29:52.363  3346  4316 I ActivityManager: Process com.UCMobile.intl:resident (pid 28509)(adj 2) has died(77,2010)
+04-11 10:29:52.493  3346  3592 I ActivityManager: Start proc 18322:com.microsoft.office.word/u0a10 for service com.microsoft.office.word/com.microsoft.office.preinstallservice.PreInstallService
+04-11 10:29:52.533  3346  3592 I ActivityManager: Killing 4842:com.UCMobile.intl/u0a171 (adj 15): DHA:SPC_empty #33
+04-11 10:29:52.553  3346  4463 I ActivityManager: Killing 11332:com.google.android.youtube/u0a155 (adj 15): DHA:empty #33
+04-11 10:29:52.643  3346  4083 I ActivityManager: Start proc 18354:com.android.vending:download_service/u0a31 for service com.android.vending/com.google.android.finsky.ipcservers.downloadservice.DownloadServiceGrpcServerAndroidService
+04-11 10:29:52.833  3346  4083 I ActivityManager: Force stopping com.tiket.gits appid=10184 user=0: clear data
+04-11 10:29:52.863  3346  4083 I ActivityManager: Force stopping com.tiket.gits appid=10184 user=0: clear data
+04-11 10:29:53.583  3346  3543 I ActivityManager: Start proc 18668:com.sec.android.app.sbrowser:privileged_process0/u0a127 for service com.sec.android.app.sbrowser/org.chromium.content.app.PrivilegedProcessService0
+04-11 10:29:53.623  3346  4376 I ActivityManager: Start proc 18685:com.UCMobile.intl:resident/u0a171 for service com.UCMobile.intl/com.uc.ud.ploys.doubleprocess.DpReceiverService
+04-11 10:29:54.413  3346  4376 I ActivityManager: Killing 25843:org.mozilla.firefox:tab27/u0a168 (adj 15): DHA:empty #33
+04-11 10:29:55.753  3346  4886 I ActivityManager: Start proc 19204:com.UCMobile.intl/u0a171 for broadcast-3 com.UCMobile.intl/com.uc.base.push.agoo.TaobaoRebindReceiver
+04-11 10:29:55.853  3346  3543 I ActivityManager: Killing 25763:org.mozilla.firefox/u0a168 (adj 15): DHA:empty #33
+04-11 10:29:56.043  3346  4376 I ActivityManager: Force stopping io.appium.uiautomator2.server.test appid=10179 user=0: from pid 19145
+04-11 10:29:56.333  3346  4654 I ActivityManager: Killing 27760:com.google.android.talk/u0a106 (adj 15): DHA:empty #33
+04-11 10:29:56.483  3346  4886 I ActivityManager: Start proc 19370:com.sec.android.app.shealth/u0a35 for broadcast-3 com.sec.android.app.shealth/com.samsung.android.app.shealth.serviceframework.partner.PluginBroadcastReceiver
+04-11 10:29:56.833  3346  6177 I ActivityManager: Force stopping io.appium.uiautomator2.server appid=10178 user=0: start instr
+04-11 10:29:56.863  3346  6177 I ActivityManager: Start proc 19496:io.appium.uiautomator2.server/u0a178 for added application io.appium.uiautomator2.server
+04-11 10:29:56.873  3346  4654 I ActivityManager: Killing 26155:com.sec.android.provider.badge/u0a3 (adj 15): DHA:empty #33
+04-11 10:29:58.563  3346  3592 I ActivityManager: Start proc 19803:com.sec.android.soagent/1000 for broadcast-5 com.sec.android.soagent/.NetworkReceiver
+04-11 10:29:58.713  3346  4321 I ActivityManager: Start proc 19825:com.policydm/1000 for broadcast-5 com.policydm/.XDMBroadcastReceiver
+04-11 10:29:58.873  3346  3998 I ActivityManager: Start proc 19884:com.samsung.aasaservice/1000 for service com.samsung.aasaservice/.AASAService
+04-11 10:29:58.933  3346  4376 I ActivityManager: Killing 30911:com.google.android.apps.maps/u0a113 (adj 15): DHA:empty #33
+04-11 10:29:58.943  3346  4376 I ActivityManager: Killing 11290:com.samsung.android.securitylogagent/1000 (adj 15): DHA:empty #33
+04-11 10:29:59.263  3346  6316 I ActivityManager: Start proc 19978:com.osp.app.signin/u0a40 for broadcast-5 com.osp.app.signin/.OspReceiver
+04-11 10:29:59.523  3346  4128 I ActivityManager: Killing 17043:com.samsung.android.app.galaxylabs/u0a14 (adj 15): DHA:empty #33
+04-11 10:29:59.813  3346  3592 I ActivityManager: Waited long enough for: ServiceRecord{c473f6 u0 com.google.android.gms/.statementservice.OperationService}
+04-11 10:29:59.923  3346  4128 I ActivityManager: Force stopping com.tiket.gits appid=10184 user=0: from pid 20033
+04-11 10:30:00.303  3346  4316 I ActivityManager: Start proc 20162:com.tiket.gits/u0a184 for activity com.tiket.gits/.v2splash.SplashV2Activity
+04-11 10:30:01.753  3346  3620 I ActivityManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +1s477ms
+04-11 10:30:02.413  3346  3592 I ActivityManager: Start proc 20729:com.trustonic.tuiservice/1000 for service com.trustonic.tuiservice/.TuiService
+04-11 10:30:04.983  3346  4463 I ActivityManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +4s704ms
+04-11 10:30:05.603  3346  4000 I ActivityManager: Start proc 21141:com.google.android.gms.unstable/u0a18 for service com.google.android.gms/.droidguard.DroidGuardService
+04-11 10:30:06.413  3346  4316 I ActivityManager: Killing 17072:com.google.android.partnersetup/u0a22 (adj 15): DHA:empty #33
+04-11 10:30:06.713  3346  6177 I ActivityManager: Start proc 21356:com.android.vending:instant_app_installer/u0a31 for service com.android.vending/com.google.android.finsky.instantapps.dna.ArchivePrefetchService
+04-11 10:30:07.003  3346  4463 I ActivityManager: Start proc 21393:com.google.android.webview:webview_service/u0a154 for service com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer
+04-11 10:30:12.153  3346  3592 I ActivityManager: Waited long enough for: ServiceRecord{42fe39a u0 com.UCMobile.intl/com.taobao.accs.data.MsgDistributeService}

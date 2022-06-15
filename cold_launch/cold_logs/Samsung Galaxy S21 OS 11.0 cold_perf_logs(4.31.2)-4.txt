@@ -1,0 +1,8 @@
+04-06 02:43:36.346 10416 13228 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=io.appium.settings/.Settings} from uid 2000
+04-06 02:43:36.428 10416 10910 I ActivityTaskManager: Removing activity ActivityRecord{b84e4f7 u0 com.google.android.vpntether/vpntether.StartActivity t671 f}}(activityDestroyed)  from stack callers=com.android.server.wm.ActivityRecord.destroyed:3571 com.android.server.wm.ActivityTaskManagerService.activityDestroyed:2626 android.app.IActivityTaskManager$Stub.onTransact:2210 android.os.Binder.execTransactInternal:1195 android.os.Binder.execTransact:1159
+04-06 02:43:36.703 10416 10476 I ActivityTaskManager: Displayed io.appium.settings/.Settings: +306ms
+04-06 02:43:37.591 10416 10596 I ActivityTaskManager: Remove from unknown app
+04-06 02:43:38.085 10416 10910 I ActivityTaskManager: Removing activity ActivityRecord{188c3be u0 io.appium.settings/.Settings t672 f}}(activityDestroyed)  from stack callers=com.android.server.wm.ActivityRecord.destroyed:3571 com.android.server.wm.ActivityTaskManagerService.activityDestroyed:2626 android.app.IActivityTaskManager$Stub.onTransact:2210 android.os.Binder.execTransactInternal:1195 android.os.Binder.execTransact:1159
+04-06 02:43:39.302 10416 13241 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tiket.gits/.v2splash.SplashV2Activity} from uid 2000
+04-06 02:43:40.068 10416 10476 I ActivityTaskManager: Displayed com.tiket.gits/.v2splash.SplashV2Activity: +685ms
+04-06 02:43:41.609 10416 10476 I ActivityTaskManager: Fully drawn com.tiket.gits/.v2splash.SplashV2Activity: +2s305ms
