@@ -7,6 +7,10 @@ from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_input import PointerInput
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import requests
+from requests.auth import HTTPBasicAuth
+import time
+import json
 
 '''
 Login Flow in GK Environment 
@@ -32,7 +36,7 @@ desired_caps = {
 }
 
 driver = webdriver.Remote("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
-
+session_id = driver.session_id
 btn_allow_element = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.XPATH, '//XCUIElementTypeButton[@name="Allow"]'))
 )
@@ -53,6 +57,10 @@ btn_more_menu_element = WebDriverWait(driver, 30).until(
 )
 btn_more_menu_element.click()
 
+# driver.swipe(185, 653, 216, 335, 250)
+
+driver.execute_script('mobile: scroll', {'direction': 'down'})
+
 # actions = ActionChains(driver)
 # actions.w3c_actions = ActionBuilder(driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
 # actions.w3c_actions.pointer_action.move_to_location(192, 729)
@@ -60,13 +68,25 @@ btn_more_menu_element.click()
 # actions.w3c_actions.pointer_action.move_to_location(204, 447)
 # actions.w3c_actions.pointer_action.release()
 # actions.perform()
-
 # action = TouchAction(driver)
-# action.scroll_from_element(element, 10, 100)
+# action.press(185, 653).wait(250).move_to(216, 335).release().perform()
 
+# driver.find_element(MobileBy.XPATH, '(//XCUIElementTypeStaticText[@name="Performance Log"])[2]').click()
+perf_log = driver.find_element(MobileBy.XPATH, '(//XCUIElementTypeStaticText[@name="Performance Log"])[2]')
+text = perf_log.text
+print(text)
 # btn_perf_menu_element = WebDriverWait(driver, 30).until(
 #     EC.element_to_be_clickable((MobileBy.XPATH, '(//XCUIElementTypeStaticText[@name="Performance Log"])[2]'))
+#
 # )
 # btn_perf_menu_element.click()
-
+# time.sleep(45)
 driver.quit()
+
+# basic = HTTPBasicAuth(userName, accessKey)
+# time.sleep(35) #requests had to wait ~30s because BrowserStack took some time to generate the App Profilng Data
+# app_start = requests.get('https://api.browserstack.com/app-automate/builds/5af88b150294a39aef7b2c06339f8f1ecd0b7784/sessions/' + str(session_id) + '/devicelogs', auth=basic)
+#
+# app_start_file = open(desired_caps["deviceName"]+" OS "+desired_caps["platformVersion"]+" devicelogs.log", "w")
+# app_start_file.write(app_start.text)
+# app_start_file.close()
